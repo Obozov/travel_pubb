@@ -1,0 +1,3704 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+	<title>TRAVEL</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/jquery.formstyler.css" rel="stylesheet">
+	<link href="css/jquery.formstyler.theme.css" rel="stylesheet">
+	<link href="css/simple-line-icons.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/owl.theme.default.css" rel="stylesheet">
+	<link href="css/jquery-ui.min_2.css" rel="stylesheet">
+	<link href="css/jquery-ui.min.css" rel="stylesheet">
+	<link href="css/jquery.fancybox.css" rel="stylesheet">
+
+
+	<script src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="js/flexmenu.min.js"></script>
+	<script type="text/javascript" src="js/jquery.formstyler.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery-ui_2.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/chart.bundle.js"></script>
+	<script src="js/utils.js"></script>
+	<script src="js/jquery.knob.js"></script>
+	<script src="js/vue-carousel-3d.min.js"></script>
+	<script src="js/vue.js"></script>
+	<script src="js/my.js"></script>
+
+
+</head>
+
+<body class="cars">
+
+	<div class="wrapper">
+
+		<div class="header">
+
+			<div class="logo">
+				<a  href="first.html">Logo Service</a>
+			</div>
+
+
+			<div class="m_desc">
+				<ul id="menudesc"> 
+	
+					<li class="first"><a class="active" href="index.html">Личный кабинет</a></li> 
+					<li><a href="add.html">Пополнение и Вывод</a></li> 
+					<li><a href="settings.html">Настройка профиля</a></li>
+					<li><a href="promo.html">Промоматериалы</a></li> 
+					<li><a href="support.html">Служба поддержки</a></li>
+					<li><a href="friends.html">Наши партнеры</a></li>
+					
+	
+				</ul> 
+			</div>
+
+			<div class="sub_menu">
+
+				<div class="lang">
+					<select>
+						<option class="ptn s_01">Русский</option>
+						<option class="ptn s_02">English</option>
+						<option class="ptn s_03">Français</option>
+						<option class="ptn s_04">中國</option>
+						<option class="ptn s_05">العربية</option>
+						<option class="ptn s_06">Deutsch</option>
+						<option class="ptn s_07">Español</option>
+
+					</select>
+
+				</div>
+
+				<a href="#">Выход</a>
+
+			</div>
+
+		</div><!-- .header-->
+
+		<div class="middle">
+
+			<div class="container">
+				<main class="content">
+
+					<div class="tabs">
+						<ul class="tabs__caption wow animated fadeInUp" data-wow-delay="0.3s">
+							<li class="active">Открыть депозит</li>
+
+							<li>Новости</li>
+
+							<li>О компании</li>
+
+							<li>Мои депозиты</li>
+
+							<li>Партнерам</li>
+
+							<li>Отзывы</li>
+
+							<li>История начислений</li>
+
+							<li>Статистика событий</li>
+
+
+
+						</ul>
+
+						<div class="tabs__content active animated">
+
+
+
+							<div id="example">
+								<carousel-3d :controls-visible="true" :controls-prev-html="'&#10092;'"
+									:controls-next-html="'&#10093;'" :controls-width="30" :controls-height="60" :perspective="0"
+									:autoplay="false" :autoplay-timeout="5000" :display="3">
+									<!-- <slide :index="0"> -->
+
+									<div class="f jsp fww ww qa">
+
+										<div class="imgOB" id="sliderr"><img src="images/ban-01.jpg" /></div>
+										<div class="w100">
+											<h1>Открыть депозит <i class="icn icon-rocket"></i></h1>
+										</div>
+
+										<div class="w30">
+
+											<div class="calc_sl">
+												<div class="inputDiv">
+													<label for="slideVal">Сумма вклада</label><input id="slideVal" type="text"
+														class="styler" />
+												</div>
+												<div id="slider"></div>
+
+												<div class="range">
+													<p class="min">20</p>
+													<p class="min">30 000 000</p>
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="w30 center">
+											<div class="inputDiv">
+												<label>Доходность</label>
+												<p class="doh">10%</p>
+											</div>
+										</div>
+
+										<div class="w30">
+
+											<div class="inputDiv">
+												<label for="slideVal2">На срок (дни)</label>
+												<div class="dropdown">
+													<button class="dropbtn" id="period-btn">Выберите период</button>
+													<div class="dropdown-content">
+														<a href="#" onclick="settPeriod('365 дней')">365 дней</a>
+														<a href="#" onclick="settPeriod('180 дней')">180 дней</a>
+														<a href="#" onclick="settPeriod('90 дней')">90 дней</a>
+														<a href="#" onclick="settPeriod('30 дней')">30 дней</a>
+													</div>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="w100 center">
+											<div class="inputDiv">
+												<label class="lbl2">За 365 дней Вы накопите</label>
+												<div class="rowww">
+												<p class="ssum">220 000 <span> <div class="dropdown-money">
+													<button class="dropbtn-money" id="period-btn2">USD</button>
+													<div class="dropdown-content-money">
+														<a href="#" onclick="setPeriod('RUB')">RUB</a>
+														<a href="#" onclick="setPeriod('EUR')">EUR</a>
+														<a href="#" onclick="setPeriod('UAH')">UAH</a>
+														<a href="#" onclick="setPeriod('USD')">USD</a>
+													</div>
+												</div>	</span></p>
+											</div>
+											<label class="lbl2">Прибыль с телом депозита составит</label>
+											<p class="ssum">1 150 000 <span id="currency-symbol">$</span></p>
+
+												<div class="buttons-row">
+													<button class="btn btng">Открыть депозит</button>
+
+												</div>
+											</div>
+										</div>
+										<div class="info-under-button">
+											<p>30 дней  = от 10$ до 1.000$ процент повышается, 8 %  в месяц, одновременно может быть открыто не более 3 депозитов</p>
+											<p>90 дней = от 10$ до 5.000$ процент повышается, 10 % в месяц, одновременно может быть открыто  не более 5 депозитов</p>
+											<p>180 дней = от 10$ до 30.000$ процент повышается, 12 % в месяц, одновременно может быть открыто не более 10 депозитов</p>
+											<p>365 дней = от 10$ до 100.000$ процент повышается, 15 % в месяц, без ограничения по депозитам,  на одно лицо</p>
+										</div>
+									</div>
+									<!-- </slide> -->
+
+									<!-- <slide :index="1">
+		  	<div class="w100"><img src="images/ban-07.jpg"/></div>
+			<div class="f jsp fww white">
+							
+					<div class="w100"><h1>Кредит <i class="icn icon-rocket"></i></h1></div>
+							
+							<div class="w30">
+								
+								<div class="calc_sl">
+									<div class="inputDiv">
+										<label>Сумма кредита</label>
+										<p class="doh2">1000 $</p>
+									</div>
+								</div>
+								
+							</div>
+							
+							<div class="w30 center">
+								<div class="inputDiv">
+										<label>Ставка</label>
+										<p class="doh2">5%</p>
+										<label class="sml">после погашения задолженности</label>
+								</div>
+							</div>
+							
+							<div class="w30">
+								
+								<div class="inputDiv">
+										<label>Срок возврата</label>
+										<p class="doh2">60 дней</p>
+								</div>
+								
+							</div>
+							
+							<div class="w100 center">
+							<label class="lbl2">Кредит предоставляется для открытия депозита</label>
+								<ul class="credit_ul">
+										<li>При запросе на кредит обязательная функция одобрения и подтверждение выше стоящего лидера</li>
+										<li>Время работы до закрытия 60 дней, если кредит не погашен в срок, данный депозит закрывается и подлежит обнулению</li>
+										<li>Кредитная задолженность списывается: с баланса, реферальными начислениями, бонусами, внутренними переводами</li>
+									<li>После погашения задолженности по кредиту, депозит становится активным и передается во владение пользователю</li>
+										
+														
+								</ul>
+							
+								<div class="inputDiv">
+									
+									
+									
+								</div>
+								
+								<button class="btn btng">Отправить на одобрение</button>
+								
+							</div>
+							
+						</div>
+		  </slide>
+			
+		<slide :index="2">
+			<div class="w100"><img src="images/ban-04.jpg"/></div>
+			<div class="f jsp fww white">
+							
+					<div class="w100"><h1>Лидерский займ <i class="icn icon-rocket"></i></h1></div>
+							
+							<div class="w30">
+								
+								<div class="calc_sl">
+									<div class="inputDiv">
+										<label>Сумма кредита</label>
+										<p class="doh2">10 000 $</p>
+									</div>
+								</div>
+								
+							</div>
+							
+							<div class="w30 center">
+								<div class="inputDiv">
+										<label>Ставка</label>
+										<p class="doh2">5%</p>
+										<label class="sml">после погашения задолженности</label>
+								</div>
+							</div>
+							
+							<div class="w30">
+								
+								<div class="inputDiv">
+										<label>Срок возврата</label>
+										<p class="doh2">90 дней</p>
+								</div>
+								
+							</div>
+							
+							<div class="w100 center">
+							<label class="lbl2">Кредит предоставляется для открытия депозита</label>
+								<ul class="credit_ul">
+									
+																		
+									<li>При запросе на кредит обязательная функция одобрения "Руководителем"</li>
+									<li>Время работы до закрытия 90 дней, если кредит не погашен в срок, данный депозит закрывается и подлежит обнулению</li>
+									<li>Кредитная задолженность списывается: с баланса, реферальными начислениями, бонусами, внутренними переводами</li>
+									<li>После погашения задолженности по кредиту, депозит становится активным и передается во владение пользователю</li>
+									
+								</ul>
+							
+								<div class="inputDiv">
+									
+									
+									
+								</div>
+								
+								<button class="btn btng">Отправить на одобрение</button>
+								
+							</div>
+							
+						</div>
+		  </slide>
+		  
+		  <slide :index="3">
+			<div class="w100"><img src="images/ban-06.jpg"/></div>
+			<div class="f jsp fww white">
+							
+					<div class="w100"><h1>Займ руководителя <i class="icn icon-rocket"></i></h1></div>
+							
+							<div class="w30">
+								
+								<div class="calc_sl">
+									<div class="inputDiv">
+										<label>Сумма кредита</label>
+										<p class="doh2">50 000 $</p>
+									</div>
+								</div>
+								
+							</div>
+							
+							<div class="w30 center">
+								<div class="inputDiv">
+										<label>Ставка кредита</label>
+										<p class="doh2">5%</p>
+										<label class="sml">после погашения задолженности</label>
+								</div>
+							</div>
+							
+							<div class="w30">
+								
+								<div class="inputDiv">
+										<label>Срок возврата</label>
+										<p class="doh2">150 дней</p>
+								</div>
+								
+							</div>
+							
+							<div class="w100 center">
+							<label class="lbl2">Кредит предоставляется для открытия депозита</label>
+								<ul class="credit_ul">
+									
+					
+									<li>При запросе на кредит обязательная функция одобрения "Вице-Президентом"</li>
+									<li>Время работы до закрытия 150 дней, если кредит не погашен в срок, данный депозит закрывается и подлежит обнулению</li>
+									<li>Кредитная задолженность списывается: с баланса, реферальными начислениями, бонусами, внутренними переводами</li>
+									<li>После погашения задолженности по кредиту, депозит становится активным и передается во владение пользователю</li>
+									
+									
+								
+									
+								</ul>
+							
+								<div class="inputDiv">
+									
+									
+									
+								</div>
+								
+								<button class="btn btng">Отправить на одобрение</button>
+								
+							</div>
+							
+						</div>
+		  </slide>
+		  
+		   <slide :index="4">
+			<div class="w100"><img src="images/ban-05.jpg"/></div>
+			<div class="f jsp fww white">
+							
+					<div class="w100"><h1>Займ Вице-президента <i class="icn icon-rocket"></i></h1></div>
+							
+							<div class="w30">
+								
+								<div class="calc_sl">
+									<div class="inputDiv">
+										<label>Сумма кредита</label>
+										<p class="doh2">100 000 $</p>
+									</div>
+								</div>
+								
+							</div>
+							
+							<div class="w30 center">
+								<div class="inputDiv">
+										<label>Ставка кредита</label>
+										<p class="doh2">5%</p>
+										<label class="sml">после погашения задолженности</label>
+								</div>
+							</div>
+							
+							<div class="w30">
+								
+								<div class="inputDiv">
+										<label>Срок возврата</label>
+										<p class="doh2">365 дней</p>
+								</div>
+								
+							</div>
+							
+							<div class="w100 center">
+							<label class="lbl2">Кредит предоставляется для открытия депозита</label>
+								<ul class="credit_ul">
+									
+									
+									<li>При запросе на кредит обязательная функция одобрения компанией</li>
+									<li>Время работы до закрытия 150 дней, если кредит не погашен в срок, данный депозит закрывается и подлежит обнулению</li>
+									<li>Кредитная задолженность списывается: с баланса, реферальными начислениями, бонусами, внутренними переводами</li>
+									<li>После погашения задолженности по кредиту, депозит становится активным и передается во владение пользователю</li>
+									
+								</ul>
+							
+								<div class="inputDiv">
+									
+									
+									
+								</div>
+								
+								<button class="btn btng">Отправить на одобрение</button>
+								
+							</div>
+							
+						</div>
+		  </slide> -->
+
+								</carousel-3d>
+							</div>
+							<!-- <script>						
+new Vue({
+  el: '#example',
+  data: {
+    slides: 3
+  },
+  components: {
+    'carousel-3d': Carousel3d.Carousel3d,
+    'slide': Carousel3d.Slide
+  }
+})
+</script> -->
+
+
+						</div>
+
+						<div class="tabs__content animated">
+							<div class="f jsp">
+								<div class="w49">
+
+									<h2>О компании</h2>
+
+									<div class="owl-carousel2 owl-theme" data-paroller-factor="-0.1"
+										data-paroller-type="foreground" data-paroller-direction="horizontal">
+
+										<div>
+
+											<iframe width="100%" height="257" src="https://www.youtube.com/embed/0TxbVRK4O_o"
+												frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+										</div>
+
+										<div>
+
+											<iframe width="100%" height="257" src="https://www.youtube.com/embed/0TxbVRK4O_o"
+												frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+										</div>
+
+										<div>
+
+											<iframe width="100%" height="257" src="https://www.youtube.com/embed/0TxbVRK4O_o"
+												frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+										</div>
+
+									</div>
+								</div>
+
+
+								<div class="w49">
+
+									<h2>Видео отзывы</h2>
+
+									<div class="owl-carousel2 owl-theme" data-paroller-factor="-0.1"
+										data-paroller-type="foreground" data-paroller-direction="horizontal">
+
+										<div>
+
+											<iframe width="100%" height="257" src="https://www.youtube.com/embed/0TxbVRK4O_o"
+												frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+										</div>
+
+										<div>
+
+											<iframe width="100%" height="257" src="https://www.youtube.com/embed/0TxbVRK4O_o"
+												frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+										</div>
+
+										<div>
+
+											<iframe width="100%" height="257" src="https://www.youtube.com/embed/0TxbVRK4O_o"
+												frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="tabs_ok">
+								<ul class="tabs__caption_ok wow animated fadeInUp" data-wow-delay="0.3s">
+									<li class="active">Новости</li>
+									<li>Мероприятия компании</li>
+									<li>Мероприятия лидеров</li>
+								</ul>
+
+								<div class="tabs__content_ok active animated">
+
+									<div class=" w100 white">
+
+										<p>03.08.2018</p>
+										<h2>Пополнение персональных аккаунтов банковскими переводами</h2>
+										<p>
+											Рады сообщить, что владельцы персональных аккаунтов вновь могут пополнять счёт с
+											помощью банковских переводов SWIFT/SEPA. Обратите внимание на то, что некоторые условия
+											изменились. Теперь есть минимальная сумма перевода, а за зачисление взимается небольшая
+											комиссия. В остальном этот способ пополнения счёта работает привычным образом.
+											Реквизиты поменялись, просьба не слать никакие переводы на старые реквизиты и взять
+											новые реквизиты из вашего аккаунта обычным способом.
+										</p>
+
+									</div>
+
+									<div class=" w100 white">
+
+										<p>03.08.2018</p>
+										<h2>Пополнение персональных аккаунтов банковскими переводами</h2>
+										<p>
+											Рады сообщить, что владельцы персональных аккаунтов вновь могут пополнять счёт с
+											помощью банковских переводов SWIFT/SEPA. Обратите внимание на то, что некоторые условия
+											изменились. Теперь есть минимальная сумма перевода, а за зачисление взимается небольшая
+											комиссия. В остальном этот способ пополнения счёта работает привычным образом.
+											Реквизиты поменялись, просьба не слать никакие переводы на старые реквизиты и взять
+											новые реквизиты из вашего аккаунта обычным способом.
+										</p>
+
+									</div>
+
+									<div class=" w100 white">
+
+										<p>03.08.2018</p>
+										<h2>Пополнение персональных аккаунтов банковскими переводами</h2>
+										<p>
+											Рады сообщить, что владельцы персональных аккаунтов вновь могут пополнять счёт с
+											помощью банковских переводов SWIFT/SEPA. Обратите внимание на то, что некоторые условия
+											изменились. Теперь есть минимальная сумма перевода, а за зачисление взимается небольшая
+											комиссия. В остальном этот способ пополнения счёта работает привычным образом.
+											Реквизиты поменялись, просьба не слать никакие переводы на старые реквизиты и взять
+											новые реквизиты из вашего аккаунта обычным способом.
+										</p>
+
+									</div>
+
+									<div class=" w100 white">
+
+										<p>03.08.2018</p>
+										<h2>Пополнение персональных аккаунтов банковскими переводами</h2>
+										<p>
+											Рады сообщить, что владельцы персональных аккаунтов вновь могут пополнять счёт с
+											помощью банковских переводов SWIFT/SEPA. Обратите внимание на то, что некоторые условия
+											изменились. Теперь есть минимальная сумма перевода, а за зачисление взимается небольшая
+											комиссия. В остальном этот способ пополнения счёта работает привычным образом.
+											Реквизиты поменялись, просьба не слать никакие переводы на старые реквизиты и взять
+											новые реквизиты из вашего аккаунта обычным способом.
+										</p>
+
+									</div>
+
+									<div class=" w100 white">
+
+										<p>03.08.2018</p>
+										<h2>Пополнение персональных аккаунтов банковскими переводами</h2>
+										<p>
+											Рады сообщить, что владельцы персональных аккаунтов вновь могут пополнять счёт с
+											помощью банковских переводов SWIFT/SEPA. Обратите внимание на то, что некоторые условия
+											изменились. Теперь есть минимальная сумма перевода, а за зачисление взимается небольшая
+											комиссия. В остальном этот способ пополнения счёта работает привычным образом.
+											Реквизиты поменялись, просьба не слать никакие переводы на старые реквизиты и взять
+											новые реквизиты из вашего аккаунта обычным способом.
+										</p>
+
+									</div>
+
+									<div class=" w100 white">
+
+										<p>03.08.2018</p>
+										<h2>Пополнение персональных аккаунтов банковскими переводами</h2>
+										<p>
+											Рады сообщить, что владельцы персональных аккаунтов вновь могут пополнять счёт с
+											помощью банковских переводов SWIFT/SEPA. Обратите внимание на то, что некоторые условия
+											изменились. Теперь есть минимальная сумма перевода, а за зачисление взимается небольшая
+											комиссия. В остальном этот способ пополнения счёта работает привычным образом.
+											Реквизиты поменялись, просьба не слать никакие переводы на старые реквизиты и взять
+											новые реквизиты из вашего аккаунта обычным способом.
+										</p>
+
+									</div>
+
+									<div class=" w100 white">
+
+										<p>03.08.2018</p>
+										<h2>Пополнение персональных аккаунтов банковскими переводами</h2>
+										<p>
+											Рады сообщить, что владельцы персональных аккаунтов вновь могут пополнять счёт с
+											помощью банковских переводов SWIFT/SEPA. Обратите внимание на то, что некоторые условия
+											изменились. Теперь есть минимальная сумма перевода, а за зачисление взимается небольшая
+											комиссия. В остальном этот способ пополнения счёта работает привычным образом.
+											Реквизиты поменялись, просьба не слать никакие переводы на старые реквизиты и взять
+											новые реквизиты из вашего аккаунта обычным способом.
+										</p>
+
+
+
+
+									</div>
+
+								</div>
+								<div class="tabs__content_ok animated">
+
+									<div class="f white jsp">
+										<div class="w80">
+											<p>03.08.2018</p>
+											<h2>Пополнение персональных аккаунтов банковскими переводами</h2>
+											<p>
+												Рады сообщить, что владельцы персональных аккаунтов вновь могут пополнять счёт с
+												помощью банковских переводов SWIFT/SEPA. Обратите внимание на то, что некоторые
+												условия изменились. Теперь есть минимальная сумма перевода, а за зачисление
+												взимается небольшая комиссия. В остальном этот способ пополнения счёта работает
+												привычным образом. Реквизиты поменялись, просьба не слать никакие переводы на старые
+												реквизиты и взять новые реквизиты из вашего аккаунта обычным способом.
+											</p>
+											<a href="#" class="morenews btn">Подробнее</a>
+										</div>
+										<div class="w20">
+											<div class="mer"><img src="images/2434324.png" /></div>
+										</div>
+									</div>
+
+									<div class="f white jsp">
+										<div class="w80">
+											<p>03.08.2018</p>
+											<h2>Пополнение персональных аккаунтов банковскими переводами</h2>
+											<p>
+												Рады сообщить, что владельцы персональных аккаунтов вновь могут пополнять счёт с
+												помощью банковских переводов SWIFT/SEPA. Обратите внимание на то, что некоторые
+												условия изменились. Теперь есть минимальная сумма перевода, а за зачисление
+												взимается небольшая комиссия. В остальном этот способ пополнения счёта работает
+												привычным образом. Реквизиты поменялись, просьба не слать никакие переводы на старые
+												реквизиты и взять новые реквизиты из вашего аккаунта обычным способом.
+											</p>
+											<a href="#" class="morenews btn">Подробнее</a>
+										</div>
+										<div class="w20">
+											<div class="mer"><img src="images/2434324.png" /></div>
+										</div>
+									</div>
+
+									<div class="f white jsp">
+										<div class="w80">
+											<p>03.08.2018</p>
+											<h2>Пополнение персональных аккаунтов банковскими переводами</h2>
+											<p>
+												Рады сообщить, что владельцы персональных аккаунтов вновь могут пополнять счёт с
+												помощью банковских переводов SWIFT/SEPA. Обратите внимание на то, что некоторые
+												условия изменились. Теперь есть минимальная сумма перевода, а за зачисление
+												взимается небольшая комиссия. В остальном этот способ пополнения счёта работает
+												привычным образом. Реквизиты поменялись, просьба не слать никакие переводы на старые
+												реквизиты и взять новые реквизиты из вашего аккаунта обычным способом.
+											</p>
+											<a href="#" class="morenews btn">Подробнее</a>
+										</div>
+										<div class="w20">
+											<div class="mer"><img src="images/2434324.png" /></div>
+										</div>
+									</div>
+
+									<div class="f white jsp">
+										<div class="w80">
+											<p>03.08.2018</p>
+											<h2>Пополнение персональных аккаунтов банковскими переводами</h2>
+											<p>
+												Рады сообщить, что владельцы персональных аккаунтов вновь могут пополнять счёт с
+												помощью банковских переводов SWIFT/SEPA. Обратите внимание на то, что некоторые
+												условия изменились. Теперь есть минимальная сумма перевода, а за зачисление
+												взимается небольшая комиссия. В остальном этот способ пополнения счёта работает
+												привычным образом. Реквизиты поменялись, просьба не слать никакие переводы на старые
+												реквизиты и взять новые реквизиты из вашего аккаунта обычным способом.
+											</p>
+											<a href="#" class="morenews btn">Подробнее</a>
+										</div>
+										<div class="w20">
+											<div class="mer"><img src="images/2434324.png" /></div>
+										</div>
+									</div>
+
+									<div class="f white jsp">
+										<div class="w80">
+											<p>03.08.2018</p>
+											<h2>Пополнение персональных аккаунтов банковскими переводами</h2>
+											<p>
+												Рады сообщить, что владельцы персональных аккаунтов вновь могут пополнять счёт с
+												помощью банковских переводов SWIFT/SEPA. Обратите внимание на то, что некоторые
+												условия изменились. Теперь есть минимальная сумма перевода, а за зачисление
+												взимается небольшая комиссия. В остальном этот способ пополнения счёта работает
+												привычным образом. Реквизиты поменялись, просьба не слать никакие переводы на старые
+												реквизиты и взять новые реквизиты из вашего аккаунта обычным способом.
+											</p>
+											<a href="#" class="morenews btn">Подробнее</a>
+										</div>
+										<div class="w20">
+											<div class="mer"><img src="images/2434324.png" /></div>
+										</div>
+									</div>
+
+									<div class="f white jsp">
+										<div class="w80">
+											<p>03.08.2018</p>
+											<h2>Пополнение персональных аккаунтов банковскими переводами</h2>
+											<p>
+												Рады сообщить, что владельцы персональных аккаунтов вновь могут пополнять счёт с
+												помощью банковских переводов SWIFT/SEPA. Обратите внимание на то, что некоторые
+												условия изменились. Теперь есть минимальная сумма перевода, а за зачисление
+												взимается небольшая комиссия. В остальном этот способ пополнения счёта работает
+												привычным образом. Реквизиты поменялись, просьба не слать никакие переводы на старые
+												реквизиты и взять новые реквизиты из вашего аккаунта обычным способом.
+											</p>
+											<a href="#" class="morenews btn">Подробнее</a>
+										</div>
+										<div class="w20">
+											<div class="mer"><img src="images/2434324.png" /></div>
+										</div>
+									</div>
+
+								</div>
+								<div class="tabs__content_ok animated">
+
+									<div class="f white jsp">
+										<div class="w80">
+											<p>03.08.2018</p>
+
+											<h2>Вебинар</h2>
+
+											<div class="l_info">
+												<p>Александр Иванов</p><span>Лидер</span>
+											</div>
+
+											<p>
+												Рады сообщить, что владельцы персональных аккаунтов вновь могут пополнять счёт с
+												помощью банковских переводов SWIFT/SEPA. Обратите внимание на то, что некоторые
+												условия изменились. Теперь есть минимальная сумма перевода, а за зачисление
+												взимается небольшая комиссия. В остальном этот способ пополнения счёта работает
+												привычным образом. Реквизиты поменялись, просьба не слать никакие переводы на старые
+												реквизиты и взять новые реквизиты из вашего аккаунта обычным способом.
+											</p>
+											<a href="#" class="morenews btn">Подробнее</a>
+										</div>
+										<div class="w20">
+											<div class="mer"><img src="images/2434324.png" /></div>
+										</div>
+									</div>
+
+									<div class="f white jsp">
+										<div class="w80">
+											<p>03.08.2018</p>
+
+											<h2>Встреча в г. Уфа</h2>
+
+											<div class="l_info">
+												<p>Александр Иванов</p><span>Лидер</span>
+											</div>
+
+											<p>
+												Рады сообщить, что владельцы персональных аккаунтов вновь могут пополнять счёт с
+												помощью банковских переводов SWIFT/SEPA. Обратите внимание на то, что некоторые
+												условия изменились. Теперь есть минимальная сумма перевода, а за зачисление
+												взимается небольшая комиссия. В остальном этот способ пополнения счёта работает
+												привычным образом. Реквизиты поменялись, просьба не слать никакие переводы на старые
+												реквизиты и взять новые реквизиты из вашего аккаунта обычным способом.
+											</p>
+											<a href="#" class="morenews btn">Подробнее</a>
+										</div>
+										<div class="w20">
+											<div class="mer"><img src="images/2434324.png" /></div>
+										</div>
+									</div>
+
+									<div class="f white jsp">
+										<div class="w80">
+											<p>03.08.2018</p>
+
+											<h2>Вебинар</h2>
+
+											<div class="l_info">
+												<p>Александр Иванов</p><span>Лидер</span>
+											</div>
+
+											<p>
+												Рады сообщить, что владельцы персональных аккаунтов вновь могут пополнять счёт с
+												помощью банковских переводов SWIFT/SEPA. Обратите внимание на то, что некоторые
+												условия изменились. Теперь есть минимальная сумма перевода, а за зачисление
+												взимается небольшая комиссия. В остальном этот способ пополнения счёта работает
+												привычным образом. Реквизиты поменялись, просьба не слать никакие переводы на старые
+												реквизиты и взять новые реквизиты из вашего аккаунта обычным способом.
+											</p>
+											<a href="#" class="morenews btn">Подробнее</a>
+										</div>
+										<div class="w20">
+											<div class="mer"><img src="images/2434324.png" /></div>
+										</div>
+									</div>
+
+									<div class="f white jsp">
+										<div class="w80">
+											<p>03.08.2018</p>
+
+											<h2>Вебинар</h2>
+
+											<div class="l_info">
+												<p>Александр Иванов</p><span>Лидер</span>
+											</div>
+
+											<p>
+												Рады сообщить, что владельцы персональных аккаунтов вновь могут пополнять счёт с
+												помощью банковских переводов SWIFT/SEPA. Обратите внимание на то, что некоторые
+												условия изменились. Теперь есть минимальная сумма перевода, а за зачисление
+												взимается небольшая комиссия. В остальном этот способ пополнения счёта работает
+												привычным образом. Реквизиты поменялись, просьба не слать никакие переводы на старые
+												реквизиты и взять новые реквизиты из вашего аккаунта обычным способом.
+											</p>
+											<a href="#" class="morenews btn">Подробнее</a>
+										</div>
+										<div class="w20">
+											<div class="mer"><img src="images/2434324.png" /></div>
+										</div>
+									</div>
+
+									<div class="f white jsp">
+										<div class="w80">
+											<p>03.08.2018</p>
+
+											<h2>Вебинар</h2>
+
+											<div class="l_info">
+												<p>Александр Иванов</p><span>Лидер</span>
+											</div>
+
+											<p>
+												Рады сообщить, что владельцы персональных аккаунтов вновь могут пополнять счёт с
+												помощью банковских переводов SWIFT/SEPA. Обратите внимание на то, что некоторые
+												условия изменились. Теперь есть минимальная сумма перевода, а за зачисление
+												взимается небольшая комиссия. В остальном этот способ пополнения счёта работает
+												привычным образом. Реквизиты поменялись, просьба не слать никакие переводы на старые
+												реквизиты и взять новые реквизиты из вашего аккаунта обычным способом.
+											</p>
+											<a href="#" class="morenews btn">Подробнее</a>
+										</div>
+										<div class="w20">
+											<div class="mer"><img src="images/2434324.png" /></div>
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+
+
+
+						</div>
+
+						<div class="tabs__content animated">
+
+							<h2>О компании</h2>
+
+							<div class="tabs_ok">
+								<ul class="tabs__caption_ok wow animated fadeInUp" data-wow-delay="0.3s">
+									<li class="active">О компании</li>
+									<li>Наши партнеры</li>
+									<li>Отчеты компании</li>
+								</ul>
+
+								<div class="taps_content__oki">
+									<div class="itemm">
+										<h2>Мы на рынке с 2010 года</h2>
+										<p>Уже 23 года мы честно выполняем свои обязательства перед нашими кредиторами
+										</p>
+									</div>
+									<div class="itemm">
+										<h2>700+ млрд рублей</h2>
+										<p>Всего получено инвестиций </p>
+									</div>
+									<div class="itemm">
+										<h2>50+ тыс </h2>
+										<p>Всего инвесторов </p>
+									</div>
+									<div class="itemm">
+										<h2>150+ млрд</h2>
+										<p>Выплачено инвестиционных начислений</p>
+									</div>
+								</div>
+								<div class="tabs__content_ok active animated">
+									<div class="f jsp white">
+										<div class="w60">
+											<h2>Что мы делаем?</h2>
+											<p>Текстом принято называть любую речь, которая записана на бумаге или в электронном
+												виде, при этом он может быть художественным или публицистическим, в виде документа,
+												письма и т.д. По сути, текст содержит не меньше двух предложений, при этом они
+												обязательно должны быть объединены не только смыслом, но и грамматикой. Описание
+												событий или предметов, судеб или действий в тексте всегда предопределено главной
+												темой, посылом. Вне зависимости от стиля, тематика написанного должна быть очерчена
+												четко.
+											</p>
+										</div>
+										<div class="w37" style="margin-top:40px;">
+											<img src="images/maps.png" style="max-width: 100%; height: auto;" />
+										</div>
+
+									</div>
+
+
+
+
+
+									<div class="f fww jsp white">
+
+										<div class="w37" style="margin-top: 20px;">
+											<ul class="content_ul" style="font-weight:400;">
+												<li>Текстом принято называть любую речь</li>
+												<li>Текстом принято называть любую речь</li>
+												<li>Текстом принято называть любую речь</li>
+												<li>Текстом принято называть любую речь</li>
+
+											</ul>
+										</div>
+
+
+										<div class="w60">
+
+											<p>Текстом принято называть любую речь, которая записана на бумаге или в электронном
+												виде, при этом он может быть художественным или публицистическим, в виде документа,
+												письма и т.д. По сути, текст содержит не меньше двух предложений, при этом они
+												обязательно должны быть объединены не только смыслом, но и грамматикой. Описание
+												событий или предметов, судеб или действий в тексте всегда предопределено главной
+												темой, посылом. Вне зависимости от стиля, тематика написанного должна быть очерчена
+												четко.
+											</p>
+										</div>
+
+									</div>
+
+									<div class="f jsp white">
+										<div class="w60">
+
+											<p><br>Текстом принято называть любую речь, которая записана на бумаге или в
+												электронном виде, при этом он может быть художественным или публицистическим, в виде
+												документа, письма и т.д. По сути, текст содержит не меньше двух предложений, при
+												этом они обязательно должны быть объединены не только смыслом, но и грамматикой.
+												Описание событий или предметов, судеб или действий в тексте всегда предопределено
+												главной темой, посылом. Вне зависимости от стиля, тематика написанного должна быть
+												очерчена четко.
+											</p>
+											<p><br>Текстом принято называть любую речь, которая записана на бумаге или в
+												электронном виде, при этом он может быть художественным или публицистическим, в виде
+												документа, письма и т.д. По сути, текст содержит не меньше двух предложений, при
+												этом они обязательно должны быть объединены не только смыслом, но и грамматикой.
+												Описание событий или предметов, судеб или действий в тексте всегда предопределено
+												главной темой, посылом. Вне зависимости от стиля, тематика написанного должна быть
+												очерчена четко.
+											</p>
+
+										</div>
+										<div class="w37" style="margin-top:0px;">
+											<img src="images/doc.jpg" style="max-width: 80%; height: auto;" />
+										</div>
+
+									</div>
+
+									<div class="f jsp fww white center">
+										<div class="w100">
+											<h1>Наши директора</h1>
+										</div>
+
+										<div class="w33 person"><img src="images/1-1.png" />
+											<h4>Thomas Eklundh</h4>
+											<p>President, Primary Investor</p>
+										</div>
+
+										<div class="w33 person"><img src="images/2-2.jpg" />
+											<h4>Dmitry Garusov</h4>
+											<p>Executive Director</p>
+										</div>
+
+										<div class="w33 person"><img src="images/3-3.png" />
+											<h4>Denis Borisenko</h4>
+											<p>Technical Director</p>
+										</div>
+
+									</div>
+
+
+									<div class="f jsp fww white center">
+										<div class="w100">
+											<h1>Наши сотрудники</h1>
+										</div>
+
+										<div class="owl-carousel3 owl-theme" data-paroller-factor="-0.1"
+											data-paroller-type="foreground" data-paroller-direction="horizontal">
+
+											<div>
+
+												<div class="w100 person"><img src="images/4-4.png" />
+													<h4>Denis Borisenko</h4>
+													<p>Technical Director</p>
+												</div>
+
+											</div>
+
+											<div>
+
+												<div class="w100 person"><img src="images/5-5.png" />
+													<h4>Denis Borisenko</h4>
+													<p>Technical Director</p>
+												</div>
+
+											</div>
+
+											<div>
+
+												<div class="w100 person"><img src="images/2-2.jpg" />
+													<h4>Denis Borisenko</h4>
+													<p>Technical Director</p>
+												</div>
+
+											</div>
+
+											<div>
+
+												<div class="w100 person"><img src="images/4-4.png" />
+													<h4>Denis Borisenko</h4>
+													<p>Technical Director</p>
+												</div>
+
+											</div>
+
+											<div>
+
+												<div class="w100 person"><img src="images/5-5.png" />
+													<h4>Denis Borisenko</h4>
+													<p>Technical Director</p>
+												</div>
+
+											</div>
+
+											<div>
+
+												<div class="w100 person"><img src="images/2-2.jpg" />
+													<h4>Denis Borisenko</h4>
+													<p>Technical Director</p>
+												</div>
+
+											</div>
+
+											<div>
+
+												<div class="w100 person"><img src="images/4-4.png" />
+													<h4>Denis Borisenko</h4>
+													<p>Technical Director</p>
+												</div>
+
+											</div>
+
+											<div>
+
+												<div class="w100 person"><img src="images/5-5.png" />
+													<h4>Denis Borisenko</h4>
+													<p>Technical Director</p>
+												</div>
+
+											</div>
+
+											<div>
+
+												<div class="w100 person"><img src="images/2-2.jpg" />
+													<h4>Denis Borisenko</h4>
+													<p>Technical Director</p>
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
+
+									<div class="f jsp fww white center">
+										<div class="w100">
+											<h1>Наши лидеры</h1>
+										</div>
+
+										<div class="owl-carousel3 owl-theme" data-paroller-factor="-0.1"
+											data-paroller-type="foreground" data-paroller-direction="horizontal">
+
+											<div>
+
+												<div class="w100 person"><img src="images/4-4.png" />
+													<h4>Denis Borisenko</h4>
+													<p>Technical Director</p>
+												</div>
+
+											</div>
+
+											<div>
+
+												<div class="w100 person"><img src="images/5-5.png" />
+													<h4>Denis Borisenko</h4>
+													<p>Technical Director</p>
+												</div>
+
+											</div>
+
+											<div>
+
+												<div class="w100 person"><img src="images/2-2.jpg" />
+													<h4>Denis Borisenko</h4>
+													<p>Technical Director</p>
+												</div>
+
+											</div>
+
+											<div>
+
+												<div class="w100 person"><img src="images/4-4.png" />
+													<h4>Denis Borisenko</h4>
+													<p>Technical Director</p>
+												</div>
+
+											</div>
+
+											<div>
+
+												<div class="w100 person"><img src="images/5-5.png" />
+													<h4>Denis Borisenko</h4>
+													<p>Technical Director</p>
+												</div>
+
+											</div>
+
+											<div>
+
+												<div class="w100 person"><img src="images/2-2.jpg" />
+													<h4>Denis Borisenko</h4>
+													<p>Technical Director</p>
+												</div>
+
+											</div>
+
+											<div>
+
+												<div class="w100 person"><img src="images/4-4.png" />
+													<h4>Denis Borisenko</h4>
+													<p>Technical Director</p>
+												</div>
+
+											</div>
+
+											<div>
+
+												<div class="w100 person"><img src="images/5-5.png" />
+													<h4>Denis Borisenko</h4>
+													<p>Technical Director</p>
+												</div>
+
+											</div>
+
+											<div>
+
+												<div class="w100 person"><img src="images/2-2.jpg" />
+													<h4>Denis Borisenko</h4>
+													<p>Technical Director</p>
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
+
+
+								</div>
+
+								<div class="tabs__content_ok animated">
+
+									<div class="f fww jsp as">
+
+										<div class="f add white w24 filtr">
+											<div class="w100 add big_tr m20">
+												<p>Показано 1245 отеля</p>
+												<a href="#" class="btn abtn">Очистить</a>
+											</div>
+											<div class="w100 add">
+												<label>Название отеля</label>
+												<input type="text" placeholder="" class="styler" />
+											</div>
+
+											<div class="w100 add">
+												<label>Страна</label>
+												<select>
+													<option>Любая</option>
+													<option>Египет</option>
+													<option>Турция</option>
+													<option disabled>Украина</option>
+													<option>Грузия</option>
+													<option>Абхазия</option>
+												</select>
+											</div>
+
+											<div class="w100 add">
+												<label>Курорт</label>
+												<select>
+													<option>Любой</option>
+													<option>Абу-Даби</option>
+													<option>Агадир</option>
+													<option disabled>Аджман</option>
+													<option>Акаба</option>
+													<option>Алгарве</option>
+												</select>
+											</div>
+
+											<div class="w100 m10 add">
+												<label>Инфраструктура</label>
+											</div>
+											<div class="w100 m10"><span id="r5"><input type="checkbox" id="checkbox5" /></span>
+												<label for="checkbox5"> Близко к пляжу</label><br />
+											</div>
+											<div class="w100 m10">
+												<span id="r"><input type="checkbox" id="checkbox1" /></span> <label for="checkbox1">
+													Собственный пляж</label><br />
+											</div>
+											<div class="w100 m10">
+												<span id="r2"><input type="checkbox" id="checkbox2" /></span> <label
+													for="checkbox2"> Песчаный пляж</label><br />
+											</div>
+
+											<div class="w100 m10">
+												<span id="r3"><input type="checkbox" id="checkbox3" /></span> <label
+													for="checkbox3"> Песчаный пляж</label><br />
+											</div>
+
+											<div class="w100 m10">
+												<span id="r4"><input type="checkbox" id="checkbox4" /></span> <label
+													for="checkbox4"> Галечный пляж</label><br />
+											</div>
+
+											<div class="w100 m10">
+												<span id="r6"><input type="checkbox" id="checkbox6" /></span> <label
+													for="checkbox6"> Для детей</label><br />
+											</div>
+
+											<div class="w100 m10">
+												<span id="r7"><input type="checkbox" id="checkbox7" /></span> <label
+													for="checkbox7"> С аквапарком</label><br />
+											</div>
+
+											<div class="w100 m10">
+												<span id="r8"><input type="checkbox" id="checkbox8" /></span> <label
+													for="checkbox8"> С бассейном</label><br />
+											</div>
+
+											<div class="w100 m10">
+												<span id="r9"><input type="checkbox" id="checkbox9" /></span> <label
+													for="checkbox9"> Для молодежи</label><br />
+											</div>
+
+											<div class="w100 m10 add">
+												<label>Звездность отеля</label>
+											</div>
+
+											<div class="w100 m10">
+												<span id="r10"><input type="checkbox" id="checkbox10" /></span>
+												<label for="checkbox10">
+													<i class="icn icon-star star"></i>
+													<i class="icn icon-star star"></i>
+													<i class="icn icon-star star"></i>
+													<i class="icn icon-star star"></i>
+													<i class="icn icon-star star"></i>
+												</label><br />
+											</div>
+											<div class="w100 m10">
+												<span id="r11"><input type="checkbox" id="checkbox11" /></span> <label
+													for="checkbox11">
+													<i class="icn icon-star star"></i>
+													<i class="icn icon-star star"></i>
+													<i class="icn icon-star star"></i>
+													<i class="icn icon-star star"></i>
+
+												</label><br />
+											</div>
+											<div class="w100 m10">
+												<span id="r12"><input type="checkbox" id="checkbox12" /></span> <label
+													for="checkbox12">
+													<i class="icn icon-star star"></i>
+													<i class="icn icon-star star"></i>
+													<i class="icn icon-star star"></i>
+
+												</label><br />
+											</div>
+											<div class="w100 m10">
+												<span id="r13"><input type="checkbox" id="checkbox13" /></span> <label
+													for="checkbox13">
+													<i class="icn icon-star star"></i>
+													<i class="icn icon-star star"></i>
+
+												</label><br />
+											</div>
+											<div class="w100 m10">
+												<span id="r14"><input type="checkbox" id="checkbox14" /></span> <label
+													for="checkbox14">
+													<i class="icn icon-star star"></i>
+
+												</label><br />
+											</div>
+
+
+											<div class="w100 add m10">
+												<label>Тип питания</label>
+												<select>
+													<option>Любое</option>
+													<option>Ультра всё включено</option>
+													<option>Всё включено</option>
+													<option>Завтра, обед и ужин</option>
+
+												</select>
+											</div>
+
+											<div class="w100 add">
+												<label>Рейтинг</label>
+												<select>
+													<option>Любой</option>
+													<option>Больше 8</option>
+													<option>Больше 7</option>
+
+													<option>Больше 6</option>
+													<option>Больше 5</option>
+												</select>
+											</div>
+
+										</div>
+
+
+										<div class="f fww jsp w74">
+
+											<div class="f w32 white nopad add">
+												<a href="#" class="otel">
+													<img src="images/otel1.jpeg" />
+													<p>Dinler 5*</p>
+													<i>Турция, Аланья</i>
+												</a>
+											</div>
+
+											<div class="f w32 white nopad add">
+
+												<a href="#" class="otel">
+													<img src="images/otel2.jpeg" />
+													<p>DoubleTree by Hilton Hotel Aqaba 5*</p>
+													<i>Иордания, Акаба</i>
+												</a>
+											</div>
+
+											<div class="f w32 white nopad add">
+
+												<a href="#" class="otel">
+													<img src="images/otel3.jpeg" />
+													<p>Reid's Palace 5*</p>
+													<i>Португалия, Мадейра</i>
+												</a>
+											</div>
+
+											<div class="f w32 white nopad add">
+												<a href="#" class="otel">
+													<img src="images/otel1.jpeg" />
+													<p>Dinler 5*</p>
+													<i>Турция, Аланья</i>
+												</a>
+											</div>
+
+											<div class="f w32 white nopad add">
+
+												<a href="#" class="otel">
+													<img src="images/otel2.jpeg" />
+													<p>DoubleTree by Hilton Hotel Aqaba 5*</p>
+													<i>Иордания, Акаба</i>
+												</a>
+											</div>
+
+											<div class="f w32 white nopad add">
+
+												<a href="#" class="otel">
+													<img src="images/otel3.jpeg" />
+													<p>Reid's Palace 5*</p>
+													<i>Португалия, Мадейра</i>
+												</a>
+											</div>
+
+											<div class="f w32 white nopad add">
+												<a href="#" class="otel">
+													<img src="images/otel1.jpeg" />
+													<p>Dinler 5*</p>
+													<i>Турция, Аланья</i>
+												</a>
+											</div>
+
+											<div class="f w32 white nopad add">
+
+												<a href="#" class="otel">
+													<img src="images/otel2.jpeg" />
+													<p>DoubleTree by Hilton Hotel Aqaba 5*</p>
+													<i>Иордания, Акаба</i>
+												</a>
+											</div>
+
+											<div class="f w32 white nopad add">
+
+												<a href="#" class="otel">
+													<img src="images/otel3.jpeg" />
+													<p>Reid's Palace 5*</p>
+													<i>Португалия, Мадейра</i>
+												</a>
+											</div>
+
+											<div class="f w32 white nopad add">
+												<a href="#" class="otel">
+													<img src="images/otel1.jpeg" />
+													<p>Dinler 5*</p>
+													<i>Турция, Аланья</i>
+												</a>
+											</div>
+
+											<div class="f w32 white nopad add">
+
+												<a href="#" class="otel">
+													<img src="images/otel2.jpeg" />
+													<p>DoubleTree by Hilton Hotel Aqaba 5*</p>
+													<i>Иордания, Акаба</i>
+												</a>
+											</div>
+
+											<div class="f w32 white nopad add">
+
+												<a href="#" class="otel">
+													<img src="images/otel3.jpeg" />
+													<p>Reid's Palace 5*</p>
+													<i>Португалия, Мадейра</i>
+												</a>
+											</div>
+
+
+											<div class="pager">
+
+												<p>1</p><a href="#">2</a><a href="#">3</a><a href="#">4</a><a
+													href="#">5</a><i>...</i><a href="#">49</a><a href="#">Дальше</a>
+
+											</div>
+
+
+
+										</div>
+
+									</div>
+
+
+								</div>
+
+								<div class="tabs__content_ok animated">
+									<div class="f fww jsp">
+										<div class="white w37">
+											<h1>Текст</h1>
+											<p>Текст, в своем роде, состоит из некоторого количества предложений. Одно предложение,
+												даже очень распространённое, сложное, текстом назвать нельзя, поскольку текст можно
+												разделить на самостоятельные предложения, а части предложения сочетаются по законам
+												синтаксиса сложного предложения, но не текста.</p>
+										</div>
+										<div class="white w60">
+											<canvas id="canvas"></canvas>
+										</div>
+										<div class="white w37">
+											<h1>Текст</h1>
+											<p>Текст, в своем роде, состоит из некоторого количества предложений. Одно предложение,
+												даже очень распространённое, сложное, текстом назвать нельзя, поскольку текст можно
+												разделить на самостоятельные предложения, а части предложения сочетаются по законам
+												синтаксиса сложного предложения, но не текста.</p>
+										</div>
+										<div class="white w60">
+											<canvas id="canvas2"></canvas>
+										</div>
+									</div>
+
+
+
+
+								</div>
+
+							</div>
+
+						</div>
+
+
+						<div class="tabs__content animated">
+							<h1>Мои депозиты</h1>
+							<div class="tabs tabss">
+								<button class="tab activedep" data-f="all">Все депозиты</button>
+								<button class="tab" data-f="in-progress">В работе</button>
+								<button class="tab" data-f="completed">Завершенные</button>
+								<button class="tab" data-f="early-withdrawal">Снятые досрочно</button>
+
+								
+							</div>
+
+
+							<div id="dialog">
+								<h2> <span>3</span>Предупреждение!</h2>
+								<p>При досрочном закрытии депозита, компания взымает штраф в размере 10% от суммы депозита. Все
+									начисления обнуляются и не подлежат выплате. </p>
+								<button id="button1">Я согласен, снять</button>
+								<button id="button2">Отменить</button>
+							</div>
+
+
+
+
+
+
+							<div class="f jsp fww white dep_active depp">
+								<div class="w100 f">
+									<h2>Депозит <span>ID</span><i>443</i></h2>
+									<div class="stat dep_active"><i class="icn icon-control-play"></i>Активен</div>
+
+								</div>
+
+
+								<div class="w49 f fww jsp ">
+
+									<div class="w30">
+										<label class="pom">Сумма</label>
+										<p class="pop pg">220 000</p>
+									</div>
+
+									<div class="w30">
+										<label class="pom">Валюта</label>
+										<p class="pop pg">USD</p>
+									</div>
+
+									<div class="w30">
+										<label class="pom">Доходность</label>
+										<p class="pop pg">10%</p>
+									</div>
+
+									<div class="w49 f fww center ppad">
+										<div class="w100 f jsp"><label class="pom">Срок(дней)</label>
+											<p class="pop">370</p>
+										</div>
+										<div class="w100 f jsp"><label class="pom">ID Депозита</label>
+											<p class="pop">443</p>
+										</div>
+										<div class="w100 f jsp"><label class="pom">Дата открытия</label>
+											<p class="pop">01.07.2017</p>
+										</div>
+									</div>
+
+									<div class="w49 f fww center ppad">
+										<div class="w100 f jsp"><label class="pom">Посление начисления</label></div>
+										<div class="w100 f jsp">
+											<p class="pop">30.07.2018</p><label class="som"><i class="green">+ 1256</i> USD</label>
+										</div>
+										<div class="w100 f jsp">
+											<p class="pop">30.07.2018</p><label class="som"><i class="green">+ 1256</i> USD</label>
+										</div>
+										<div class="w100 f jsp">
+											<p class="pop">30.07.2018</p><label class="som"><i class="green">+ 1256</i> USD</label>
+										</div>
+										<div class="w100 f jsp"><a href="#" class="gr_a">Все начисления</a></div>
+									</div>
+
+								</div>
+
+
+								<div class="w49 f jsp">
+
+									<div class="circle">
+										<p>Начислений</p>
+										<input type="text" value="160" class="dial" data-readOnly="true" data-thickness="0.10"
+											data-fgColor="#12c946" data-bgColor="#e7ecef" data-width="168" data-min="0"
+											data-max="370" data-step="1">
+										<i>из 370</i>
+									</div>
+
+									<div class="circle">
+										<p>Начислено</p>
+										<input type="text" value="1234000" class="dial" data-readOnly="true" data-thickness="0.10"
+											data-fgColor="#12c946" data-bgColor="#e7ecef" data-width="168" data-min="0"
+											data-max="1500000" data-step="1">
+										<i>USD</i>
+									</div>
+								</div>
+								<button id="open-dialog" class="btn  btnjs">Снять досрочно</button>
+								<!-- чуть выше окно предупреждения,(это все в js написал) -->
+							</div>
+
+							<div class="f jsp fww white dep_dolg depp">
+								<div class="w100 f">
+									<h2>Депозит <span>ID</span><i>443</i></h2>
+									<div class="stat dep_dolg"><i class="icon-s"></i>Заемный, активен</div>
+
+								</div>
+
+
+								<div class="w49 f fww jsp">
+
+									<div class="w30">
+										<label class="pom">Сумма</label>
+										<p class="pop pg">1000</p>
+									</div>
+
+									<div class="w30">
+										<label class="pom">Валюта</label>
+										<p class="pop pg">USD</p>
+									</div>
+
+									<div class="w30">
+										<label class="pom">Доходность</label>
+										<p class="pop pg">10%</p>
+									</div>
+
+									<div class="w49 f fww center ppad">
+										<div class="w100 f jsp"><label class="pom">Срок(дней)</label>
+											<p class="pop">60</p>
+										</div>
+										<div class="w100 f jsp"><label class="pom">ID Депозита</label>
+											<p class="pop">443</p>
+										</div>
+										<div class="w100 f jsp"><label class="pom">Дата открытия</label>
+											<p class="pop">01.07.2017</p>
+										</div>
+									</div>
+
+									<div class="w49 f fww center ppad">
+										<div class="w100 f jsp"><label class="pom">Посление списания</label></div>
+										<div class="w100 f jsp">
+											<p class="pop">30.07.2018</p><label class="som"><i class="green">- 4.76</i> USD</label>
+										</div>
+										<div class="w100 f jsp">
+											<p class="pop">30.07.2018</p><label class="som"><i class="green">- 4.76</i> USD</label>
+										</div>
+										<div class="w100 f jsp">
+											<p class="pop">30.07.2018</p><label class="som"><i class="green">- 4.76</i> USD</label>
+										</div>
+										<div class="w100 f jsp"><a href="#" class="gr_a">Все списания</a></div>
+									</div>
+
+								</div>
+
+
+								<div class="w49 f jsp">
+
+									<div class="circle">
+										<p>Осталось оплатить</p>
+										<input type="text" value="853" class="dial" data-readOnly="true" data-thickness="0.10"
+											data-fgColor="#e84949" data-bgColor="#e7ecef" data-width="168" data-min="0"
+											data-max="1000" data-step="1" data-angleOffset="180">
+										<i>из 1000$</i>
+									</div>
+
+									<div class="circle">
+										<p>Дни до возврата</p>
+										<input type="text" value="4" class="dial" data-readOnly="true" data-thickness="0.10"
+											data-fgColor="#e84949" data-bgColor="#e7ecef" data-width="168" data-min="0"
+											data-max="60" data-step="1" data-angleOffset="180">
+										<i>из 60</i>
+									</div>
+								</div>
+
+							</div>
+
+
+
+							<div class="f jsp fww white dep_end depp">
+								<div class="w100 f">
+									<h2>Депозит <span>ID</span><i>443</i></h2>
+									<div class="stat dep_end"><i class="icn icon-clock"></i>Завершен</div>
+
+								</div>
+
+
+								<div class="w49 f fww jsp">
+
+									<div class="w30">
+										<label class="pom">Сумма</label>
+										<p class="pop pg">220 000</p>
+									</div>
+									<div class="w30">
+										<label class="pom">Доходность</label>
+										<p class="pop pg">10%</p>
+									</div>
+									<div class="w30">
+										<label class="pom">Валюта</label>
+										<p class="pop pg">USD</p>
+									</div>
+
+									<div class="w49 f fww center ppad">
+										<div class="w100 f jsp"><label class="pom">Срок(дней)</label>
+											<p class="pop">370</p>
+										</div>
+										<div class="w100 f jsp"><label class="pom">ID Депозита</label>
+											<p class="pop">443</p>
+										</div>
+										<div class="w100 f jsp"><label class="pom">Дата открытия</label>
+											<p class="pop">01.07.2017</p>
+										</div>
+									</div>
+
+									<div class="w49 f fww center ppad">
+										<div class="w100 f jsp"><label class="pom">Посление начисления</label></div>
+										<div class="w100 f jsp">
+											<p class="pop">30.07.2018</p><label class="som"><i class="green">+ 1256</i> USD</label>
+										</div>
+										<div class="w100 f jsp">
+											<p class="pop">30.07.2018</p><label class="som"><i class="green">+ 1256</i> USD</label>
+										</div>
+										<div class="w100 f jsp">
+											<p class="pop">30.07.2018</p><label class="som"><i class="green">+ 1256</i> USD</label>
+										</div>
+										<div class="w100 f jsp"><a href="#" class="gr_a">Все начисления</a></div>
+									</div>
+
+								</div>
+
+
+								<div class="w49 f jsp">
+
+									<div class="circle">
+										<p>Начислений</p>
+										<input type="text" value="160" class="dial" data-readOnly="true" data-thickness="0.10"
+											data-fgColor="#d7d7d7" data-bgColor="#e7ecef" data-width="168" data-min="0"
+											data-max="370" data-step="1">
+										<i>из 370</i>
+									</div>
+
+									<div class="circle">
+										<p>Начислено</p>
+										<input type="text" value="1234000" class="dial" data-readOnly="true" data-thickness="0.10"
+											data-fgColor="#d7d7d7" data-bgColor="#e7ecef" data-width="168" data-min="0"
+											data-max="1500000" data-step="1">
+										<i>USD</i>
+									</div>
+								</div>
+
+							</div>
+
+
+						</div>
+
+						<div class="tabs__content animated">
+
+							<h2>Партнерам</h2>
+
+							<div class="tabs_ok">
+								<ul class="tabs__caption_ok wow animated fadeInUp" data-wow-delay="0.3s">
+									<li class="active">Партнерская программа</li>
+									<li>Реферальные начисления</li>
+
+								</ul>
+
+								<div class="tabs__content_ok active animated">
+
+
+									<div class="f fww jsp white pt">
+										<div class="w100 st st1">
+											<h1><i class="icn icon-user"></i>Статус: C1</h1>
+										</div>
+
+										<div class="w100 white bg dohod">
+											<h2>Доход</h2>
+											<ul>
+												<li><span class="bang">10%</span> от приобретенных портфелей клиентами на 1-м уровне
+												</li>
+											</ul>
+
+										</div>
+
+										<div class="w40 partb p_y f add center">
+											<p>Личный депозит обязательный 1.000$</p>
+										</div>
+										<div class="w10 f add center">
+											<p>или</p>
+										</div>
+
+										<div class="w40 partb p_g f add center">
+											<p>Одобренный займ</p>
+											<i>При этом "аплайн" должен оплатить 5% займа и подтвердить данный кредит</i>
+										</div>
+
+
+									</div>
+
+									<div class="f fww jsp white pt">
+										<div class="w100 st st1">
+											<h1><i class="icn icon-people"></i>Статус: C2</h1>
+										</div>
+
+										<div class="w100 white bg dohod">
+											<h2>Доход</h2>
+											<ul>
+												<li><span class="bang">10%</span> от приобретенных портфелей клиентами на 1-м уровне
+												</li>
+												<li><span class="bang">2%</span> от приобретенных портфелей остальными клиентами
+													структуры</li>
+											</ul>
+
+										</div>
+
+										<div class="w100 partb p_g f add center m20 by">
+											<p><br>Товарооборот от 10.000$</p><br>
+										</div>
+
+										<div class="w40 partb p_y f add center">
+											<p>Личный депозит обязательный 1.000$</p>
+										</div>
+										<div class="w10 f add center">
+											<p>или</p>
+										</div>
+
+										<div class="w40 partb p_g f add center">
+											<p>Одобренный займ</p>
+											<i>При этом "аплайн" должен оплатить 5% займа и подтвердить данный кредит</i>
+										</div>
+
+
+
+
+									</div>
+
+									<div class="f fww jsp white pt">
+										<div class="w100 st st1">
+											<h1><i class="icn icon-badge"></i>Лидер</h1>
+										</div>
+
+										<div class="w100">
+
+											<div class="acc_part">
+
+												<div class="acc_but">Перейти</div>
+
+												<div class="acc_con">
+
+													<ul class="part_stat">
+														<li><i class="icn icon-check green"></i>
+															<p>Товарооборот</p><i class="green">Выполнено</i>
+														</li>
+														<li><i class="icn icon-ban red"></i>
+															<p>Обучение</p><i class="red">Не выполнено</i>
+														</li>
+														<li><i class="icn icon-check green"></i>
+															<p>Оплата вебинара</p><i class="green">Выполнено</i>
+														</li>
+														<li><i class="icn icon-check green"></i>
+															<p>Подписанный договор</p><i class="green">Выполнено</i>
+														</li>
+														<li><i class="icn icon-check green"></i>
+															<p>Создание депозита</p><i class="green">Выполнено</i>
+														</li>
+													</ul>
+
+													<div class="w100 center">
+														<button class="btn">Перейти</button>
+
+
+
+													</div>
+
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="w100 white bg dohod">
+											<h2>Доход</h2>
+											<ul>
+												<li><span class="bang">5000 $</span> заработная плата при выполнении структурой
+													30.000$ (заработная плата начисляется в конце месяца, рассчитывается в равной
+													доли от выполнения, минимальное выполнение 15.000$ в противном случае заработная
+													плата не начисляется.)</li>
+												<li><span class="bang">10%</span> от приобретенных портфелей клиентами на 1-м уровне
+												</li>
+												<li><span class="bang">3%</span> от приобретенных портфелей клиентами на 2-м уровне
+												</li>
+												<li><span class="bang">3%</span> от приобретенных портфелей клиентами на 3-м уровне
+												</li>
+												<li><span class="bang">2%</span> от приобретенных портфелей остальными клиентами
+													структуры</li>
+
+											</ul>
+											<h5>Предоставляется:</h5>
+											<ul class="doh_dop">
+
+												<li>Серебрянный значек</li>
+
+												<li>Брендбук, футболка, кепка</li>
+
+											</ul>
+
+											<p>Cтатус звезда, бонусная система компании, статусом звезда премируются партнеры за
+												выполнение товарооборота и условий контракта, в месяц, премия <span
+													class="bang">1.000$</span> за три звезды, начисление премии каждого 3-го
+												четвертого месяца.</p>
+
+
+										</div>
+										<div class="w100 partb p_g f add center m20 by">
+											<p><br>Товарооборот от 50.000$</p><br>
+										</div>
+
+
+										<div class="w40 partb p_y f add center m20">
+											<p>Личный депозит обязательный 10.000$</p>
+										</div>
+										<div class="w10 f add center">
+											<p>или</p>
+										</div>
+
+										<div class="w40 partb p_g f add center  m20">
+
+											<p>Одобренный займ</p>
+											<i>При этом "аплайн" должен оплатить 5% займа и подтвердить данный кредит, но не за
+												счет реферальных</i>
+										</div>
+
+										<div class="w100 partb p_g f add m10 by">
+											<ul class="doh_dop">
+
+												<li>Обязательное обучение (платное)</li>
+												<li>Сдать экзамен</li>
+												<li>Подписание обязательного контракта</li>
+												<li>Проводить онлайн вебинары YouTube - (дважды в неделю)</li>
+												<li>Прямые трансляции (Instagram 5 дней в неделю)</li>
+												<li>Фото (5 дней в неделю, Instagram)</li>
+												<li>Ведение социальных сетей, чатов</li>
+												<li>Планирование меропритий компании и согласование графиков проведения с выше
+													стоящим "аплайном"</li>
+												<li>Присутствие на мероприятиях компании</li>
+
+											</ul>
+										</div>
+
+
+
+									</div>
+
+
+
+									<div class="f fww jsp white pt">
+										<div class="w100 st st2">
+											<h1><i class="icn icon-badge"></i>Руководитель</h1>
+										</div>
+										<div class="w100">
+
+											<div class="acc_part">
+
+												<div class="acc_but">Перейти</div>
+
+												<div class="acc_con">
+
+													<ul class="part_stat">
+														<li><i class="icn icon-check green"></i>
+															<p>Товарооборот</p><i class="green">Выполнено</i>
+														</li>
+														<li><i class="icn icon-ban red"></i>
+															<p>Обучение</p><i class="red">Не выполнено</i>
+														</li>
+														<li><i class="icn icon-check green"></i>
+															<p>Оплата вебинара</p><i class="green">Выполнено</i>
+														</li>
+														<li><i class="icn icon-check green"></i>
+															<p>Подписанный договор</p><i class="green">Выполнено</i>
+														</li>
+														<li><i class="icn icon-check green"></i>
+															<p>Создание депозита</p><i class="green">Выполнено</i>
+														</li>
+													</ul>
+
+													<div class="w100 center">
+														<button class="btn">Перейти</button>
+
+
+
+													</div>
+
+												</div>
+
+											</div>
+
+										</div>
+										<div class="w100 white bg dohod">
+											<h2>Доход</h2>
+											<ul>
+												<li><span class="bang">2000 $</span> заработная плата от полного выполнения
+													товарооборота каждым лидером. Заработная плата рассчитывается от минимального
+													выполнения товарооборота структуры каждого ниже стоящего лидера в равных
+													долях<strong></strong></li>
+											</ul>
+											<h5>Предоставляется:</h5>
+											<ul class="doh_dop">
+
+												<li>Золотой значек</li>
+
+
+
+											</ul>
+
+											<p>Cтатус звезда, бонусная система компании, статусом звезда премируются партнеры за
+												выполнение товара оборота структуры и условий контракта своевременно, в месяц,
+												премия <span class="bang">2.000$</span> за три звезды, начисление премии каждого 3го
+												четвертого месяца</p>
+
+
+										</div>
+										<div class="w100 partb p_g f add center m20 by">
+											<p><br>В структуре должно быть 5 лидеров</p><br>
+										</div>
+
+
+										<div class="w40 partb p_y f add center m20">
+											<p>Личный депозит обязательный 50.000$</p>
+										</div>
+										<div class="w10 f add center">
+											<p>или</p>
+										</div>
+
+										<div class="w40 partb p_g f add center  m20">
+
+											<p>Одобренный займ</p>
+											<i>При этом "аплайн" должен оплатить 5% займа и подтвердить данный кредит, но не за
+												счет реферальных</i>
+										</div>
+
+										<div class="w100 partb p_g f add m10 by">
+											<ul class="doh_dop">
+
+												<li>Обязательное обучение(платное)</li>
+												<li>Сдать экзамен</li>
+												<li>Подписание договора согластно рангу</li>
+												<li>Формировать ниже стоящих лидеров, проводить обучение, принимать экзамены у
+													лидеров</li>
+												<li>Формировать минимум 1 лидера ежемесячно </li>
+												<li>5 дней в неделю курировать работу ниже стоящих лидеров</li>
+												<li>Каждую пятницу предоставлять "Вице-Призеденту" отчет о новых лидерах структуры
+												</li>
+												<li>Предоставлять YouTube запись о работе с лидерами</li>
+												<li>Предоставлять ссыли всех записей лидеров, фото, видео, презентации, мероприятия
+												</li>
+												<li>Каждую субботу проводить работу с лидерами, онлайн YouTube вебинар</li>
+												<li>Проводить конференции компании</li>
+												<li>Ведение социальных сетей, не менее 5-ти видео трансляций Instagram и 2-х YouTube
+													трансляций в неделю</li>
+												<li>Ведение чатов</li>
+												<li>Обязательное присутствие на мероприятиях от 100 человек и более</li>
+
+
+											</ul>
+										</div>
+
+
+
+									</div>
+
+
+									<div class="f fww jsp white pt">
+										<div class="w100 st st2">
+											<h1><i class="icn icon-badge"></i>В.Презедент</h1>
+										</div>
+										<div class="w100">
+
+											<div class="acc_part">
+
+												<div class="acc_but">Перейти</div>
+
+												<div class="acc_con">
+
+													<ul class="part_stat">
+														<li><i class="icn icon-check green"></i>
+															<p>Товарооборот</p><i class="green">Выполнено</i>
+														</li>
+														<li><i class="icn icon-ban red"></i>
+															<p>Обучение</p><i class="red">Не выполнено</i>
+														</li>
+														<li><i class="icn icon-check green"></i>
+															<p>Оплата вебинара</p><i class="green">Выполнено</i>
+														</li>
+														<li><i class="icn icon-check green"></i>
+															<p>Подписанный договор</p><i class="green">Выполнено</i>
+														</li>
+														<li><i class="icn icon-check green"></i>
+															<p>Создание депозита</p><i class="green">Выполнено</i>
+														</li>
+													</ul>
+
+													<div class="w100 center">
+														<button class="btn">Перейти</button>
+
+
+
+													</div>
+
+												</div>
+
+											</div>
+
+										</div>
+										<div class="w100 white bg dohod">
+											<h2>Доход</h2>
+											<ul>
+												<li><span class="bang">100%</span> заработная плата от заработной платы руководителя
+												</li>
+											</ul>
+											<ul class="doh_dop">
+
+												<li>Особенный значек с логотипом компании</li>
+
+
+
+											</ul>
+
+											<p>Статус звезда, бонусная система компании, статусом звезда премируются партнеры за
+												выполнение товарооборота всей структуры и своевременное выполнение условий
+												контракта, в месяц, премия <span class="bang">3.000$</span> за три звезды,
+												начисление премии каждого 3-го четвертого месяца</p>
+
+										</div>
+										<div class="w100 partb p_g f add center m20 by">
+											<p><br>В структуре должно быть 5 руководителей</p><br>
+										</div>
+
+
+										<div class="w40 partb p_y f add center m20">
+											<p>Личный депозит обязательный 100.000$</p>
+										</div>
+										<div class="w10 f add center">
+											<p>или</p>
+										</div>
+
+										<div class="w40 partb p_g f add center  m20">
+
+											<p>Одобренный займ</p>
+											<i>Займ подтверждается компанией</i>
+										</div>
+
+
+										<div class="w100 partb p_g f add m10 by">
+											<ul class="doh_dop">
+
+												<li>Обязательное обучение(платное)</li>
+												<li>Сдать экзамен</li>
+												<li>Формировать ниже стоящих руководителей, проводить обучение, принимать экзамены
+												</li>
+												<li>Формировать минимум 1 руководителя ежемесячно</li>
+												<li>5 дней в неделю курировать работу ниже стоящих руководителей</li>
+												<li>Обязательное присутствие на мероприяниях от 250 человек</li>
+												<li>Каждую субботу проводить работу с руководителями структур, онлайн YouTube
+													вебинар лидерского роста</li>
+												<li>Проводить конференции компании</li>
+												<li>Ведение социальных сетей, Instagram, Facebook, Твиттер</li>
+												<li>Один раз в месяц собирать презентации, поздравления о достижениях структуры,
+													презентация "инсайда", достижения компании</li>
+
+
+											</ul>
+										</div>
+
+
+
+									</div>
+
+
+
+								</div>
+
+								<div class="tabs__content_ok animated">
+
+
+									<div class="f fww jsp">
+
+
+										<div class="w49 f fww white">
+											<div class="w49">
+												<label class="pom">Ваш статус</label>
+												<p class="pop pg"><i class="icn icon-badge"></i>Статус: C1</p>
+											</div>
+											<div class="w49">
+												<label class="pom">Ваш оборот</label>
+												<p class="pop pg">500 USD</p>
+											</div>
+
+											<div class="meter">
+												<meter style="width:100%" max="1000" min="0" low="100" high="800" value="500"
+													optimum="1100"></meter>
+												<div class="znach">
+													<p>0</p>
+													<p>500</p>
+												</div>
+											</div>
+											<div class="w100 center">
+												<label class="pom">До следующего статуса осталось</label>
+												<p class="pop pg">500 USD</p>
+											</div>
+										</div>
+
+										<div class="w49 white">
+											<label class="pom">Ваш ID</label>
+											<input type="text" readonly value="5678432" class="styler" style="width: 100%;">
+											<label class="pom">Ваша реферальная ссылка</label>
+											<input type="text" readonly
+												value="http://wallet.advcash.com/referral/bf283187-77ea-4686-9760-eadabeeaf5ee"
+												class="styler" style="width: 100%;">
+										</div>
+
+
+										<div class="f fww jsp">
+
+											<div class="f jsp fww white w29 by">
+
+												<div class="w100">
+													<h3 class="h3sob">Оборот структуры</h3>
+												</div>
+
+												<label class="pom w100 m10">За 24 часа</label>
+												<p class="pop w100">20 000 USD</p>
+
+												<label class="pom w100 m10">За весь месяц</label>
+												<p class="pop w100">200 000 USD</p>
+
+												<label class="pom w100 m10">За весь период</label>
+												<p class="pop w100">200 000 USD</p>
+
+											</div>
+
+											<div class="f jsp fww white w29 bg">
+
+												<div class="w100">
+													<h3 class="h3sob">Доход</h3>
+												</div>
+
+												<label class="pom w100 m10">За 24 часа</label>
+												<p class="pop w100">20 000 USD</p>
+
+												<label class="pom w100  m10">За весь месяц</label>
+												<p class="pop w100">200 000 USD</p>
+
+												<label class="pom w100  m10">За весь период</label>
+												<p class="pop w100">200 000 USD</p>
+
+											</div>
+
+											<div class="f jsp fww white w40 bg">
+												<div class="w100">
+													<h2>Ваши партнеры</h2>
+												</div>
+												<div class="w40">
+
+													<label class="pom w100  m10">Активных</label>
+													<p class="pop w100 ">8</p>
+													<label class="pom w100  m10">Не активных</label>
+													<p class="pop w100 ">16</p>
+
+													<label class="pom w100 m10">Всего</label>
+													<p class="pop w100 ">24</p>
+
+												</div>
+
+												<div class="w60 chart">
+													<div id="canvas-holder" style="width:100%">
+														<canvas id="chart-area"></canvas>
+													</div>
+
+
+												</div>
+											</div>
+
+
+
+										</div>
+
+
+
+										<div class="w100 white f jsp fww">
+											<div class="w_tab_ref">
+												<ul class="w_tab_cap_ref wow animated fadeInUp" data-wow-delay="0.3s">
+													<li class="active">Активные</li>
+													<li>Не активные</li>
+													<li>Структурное выполнение</li>
+												</ul>
+												<div class="w_tab_content_ref active animated">
+													<div class="w30">
+
+														<div class="tbl tbl14 tright">
+															<div class="tr th">
+																<div class="td w49">E-mail</div>
+																<div class="td w49">Статус партнера</div>
+															</div>
+															<div class="tr">
+																<div class="td w49">igor@mail.com</div>
+																<div class="td w49">Директор</div>
+															</div>
+															<div class="tr">
+																<div class="td w49">igor@mail.com</div>
+																<div class="td w49">Директор</div>
+															</div>
+															<div class="tr">
+																<div class="td w49">igor@mail.com</div>
+																<div class="td w49">Директор</div>
+															</div>
+															<div class="tr">
+																<div class="td w49">igor@mail.com</div>
+																<div class="td w49">Директор</div>
+															</div>
+														</div>
+
+													</div>
+													<div class="w70">
+
+														<div class="w_tab">
+															<ul class="w_tab_cap wow animated fadeInUp" data-wow-delay="0.3s">
+																<li class="active">За 24 часа</li>
+																<li>За месяц</li>
+																<li>За весь период</li>
+															</ul>
+															<div class="w_tab_content active animated">
+																<div class="tbl tbl14 tleft">
+																	<div class="tr th">
+																		<div class="td w24">Личные пополнения</div>
+																		<div class="td w24">Оборот структуры</div>
+																		<div class="td w24">Общий оборот</div>
+																		<div class="td w24">Ваш доход</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w24">1780 USD</div>
+																		<div class="td w24">17 870 USD</div>
+																		<div class="td w24">177 800 USD</div>
+																		<div class="td w24 green">+ 80 000 USD</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w24">1780 USD</div>
+																		<div class="td w24">17 870 USD</div>
+																		<div class="td w24">177 800 USD</div>
+																		<div class="td w24 green">+ 80 000 USD</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w24">1780 USD</div>
+																		<div class="td w24">17 870 USD</div>
+																		<div class="td w24">177 800 USD</div>
+																		<div class="td w24 green">+ 80 000 USD</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w24">1780 USD</div>
+																		<div class="td w24">17 870 USD</div>
+																		<div class="td w24">177 800 USD</div>
+																		<div class="td w24 green">+ 80 000 USD</div>
+																	</div>
+
+																</div>
+															</div>
+															<div class="w_tab_content animated">
+																<div class="tbl tbl14 tleft">
+																	<div class="tr th">
+																		<div class="td w24">Личные пополнения</div>
+																		<div class="td w24">Оборот структуры</div>
+																		<div class="td w24">Общий оборот</div>
+																		<div class="td w24">Ваш доход</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w24">17 880 USD</div>
+																		<div class="td w24">178 870 USD</div>
+																		<div class="td w24">1 778 800 USD</div>
+																		<div class="td w24 green">+ 800 000 USD</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w24">17 880 USD</div>
+																		<div class="td w24">178 870 USD</div>
+																		<div class="td w24">1 778 800 USD</div>
+																		<div class="td w24 green">+ 800 000 USD</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w24">17 880 USD</div>
+																		<div class="td w24">178 870 USD</div>
+																		<div class="td w24">1 778 800 USD</div>
+																		<div class="td w24 green">+ 800 000 USD</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w24">17 880 USD</div>
+																		<div class="td w24">178 870 USD</div>
+																		<div class="td w24">1 778 800 USD</div>
+																		<div class="td w24 green">+ 800 000 USD</div>
+																	</div>
+
+																</div>
+															</div>
+															<div class="w_tab_content animated">
+																<div class="tbl tbl14 tleft">
+																	<div class="tr th">
+																		<div class="td w24">Личные пополнения</div>
+																		<div class="td w24">Оборот структуры</div>
+																		<div class="td w24">Общий оборот</div>
+																		<div class="td w24">Ваш доход</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w24">170 780 USD</div>
+																		<div class="td w24">1 777 870 USD</div>
+																		<div class="td w24">7 777 800 USD</div>
+																		<div class="td w24 green">+ 8 000 000 USD</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w24">170 780 USD</div>
+																		<div class="td w24">1 777 870 USD</div>
+																		<div class="td w24">7 777 800 USD</div>
+																		<div class="td w24 green">+ 8 000 000 USD</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w24">170 780 USD</div>
+																		<div class="td w24">1 777 870 USD</div>
+																		<div class="td w24">7 777 800 USD</div>
+																		<div class="td w24 green">+ 8 000 000 USD</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w24">170 780 USD</div>
+																		<div class="td w24">1 777 870 USD</div>
+																		<div class="td w24">7 777 800 USD</div>
+																		<div class="td w24 green">+ 8 000 000 USD</div>
+																	</div>
+
+																</div>
+															</div>
+														</div>
+
+													</div>
+												</div>
+
+												<div class="w_tab_content_ref animated">
+
+													<div class="w30">
+
+														<div class="tbl tbl14 tright">
+															<div class="tr th">
+																<div class="td w49">E-mail</div>
+																<div class="td w49">Статус партнера</div>
+															</div>
+															<div class="tr">
+																<div class="td w49">igor@mail.com</div>
+																<div class="td w49">--</div>
+															</div>
+															<div class="tr">
+																<div class="td w49">igor@mail.com</div>
+																<div class="td w49">--</div>
+															</div>
+															<div class="tr">
+																<div class="td w49">igor@mail.com</div>
+																<div class="td w49">--</div>
+															</div>
+															<div class="tr">
+																<div class="td w49">igor@mail.com</div>
+																<div class="td w49">--</div>
+															</div>
+														</div>
+
+													</div>
+													<div class="w70">
+
+														<div class="w_tab">
+															<ul class="w_tab_cap wow animated fadeInUp" data-wow-delay="0.3s">
+																<li class="active">За 24 часа</li>
+																<li>За месяц</li>
+																<li>За весь период</li>
+															</ul>
+															<div class="w_tab_content active animated">
+																<div class="tbl tbl14 tleft">
+																	<div class="tr th">
+																		<div class="td w24">Личные пополнения</div>
+																		<div class="td w24">Оборот структуры</div>
+																		<div class="td w24">Общий оборот</div>
+																		<div class="td w24">Ваш доход</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																	</div>
+
+																</div>
+															</div>
+															<div class="w_tab_content animated">
+																<div class="tbl tbl14 tleft">
+																	<div class="tr th">
+																		<div class="td w24">Личные пополнения</div>
+																		<div class="td w24">Оборот структуры</div>
+																		<div class="td w24">Общий оборот</div>
+																		<div class="td w24">Ваш доход</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																	</div>
+
+																</div>
+															</div>
+															<div class="w_tab_content animated">
+																<div class="tbl tbl14 tleft">
+																	<div class="tr th">
+																		<div class="td w24">Личные пополнения</div>
+																		<div class="td w24">Оборот структуры</div>
+																		<div class="td w24">Общий оборот</div>
+																		<div class="td w24">Ваш доход</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																		<div class="td w24">0 USD</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+													</div>
+
+												</div>
+
+												<div class="w_tab_content_ref fww animated">
+
+													<div class="w100 f fww white">
+
+
+														<canvas id="canvas3"></canvas>
+
+													</div>
+
+													<div class="w100 f fww white">
+
+														<h1><br>Структурное выполнение (Руководитель)</h1>
+
+														<div class="tbl tbl14">
+															<div class="tr th">
+																<div class="td w10">ID</div>
+																<div class="td w10">Статус</div>
+																<div class="td w20">Выполнение структурой</div>
+																<div class="td w20">Выполнено 1 линией</div>
+																<div class="td w20">Требуемая</div>
+																<div class="td w20">Остаток к выполнению</div>
+															</div>
+															<div class="tr">
+																<div class="td w10"><a href="#"
+																		title="Александр Иванов, example@mail.com">#457689</a></div>
+																<div class="td w10">Лидер</div>
+																<div class="td w20">9 567.00</div>
+																<div class="td w20">5 456.00</div>
+																<div class="td w20">10 000.00</div>
+																<div class="td w20">3 456.00</div>
+															</div>
+
+															<div class="tr red_bg">
+																<div class="td w10"><a href="#">#457689</a></div>
+																<div class="td w10">Лидер</div>
+																<div class="td w20">1 567.00</div>
+																<div class="td w20">456.00</div>
+																<div class="td w20">10 000.00</div>
+																<div class="td w20">9 456.00</div>
+															</div>
+
+															<div class="tr">
+																<div class="td w10"><a href="#">#457689</a></div>
+																<div class="td w10">Лидер</div>
+																<div class="td w20">9 567.00</div>
+																<div class="td w20">5 456.00</div>
+																<div class="td w20">10 000.00</div>
+																<div class="td w20">3 456.00</div>
+															</div>
+
+															<div class="tr green">
+																<div class="td w10"><a href="#">#457689</a></div>
+																<div class="td w10">Лидер</div>
+																<div class="td w20">10 567.00</div>
+																<div class="td w20">5 456.00</div>
+																<div class="td w20">10 000.00</div>
+																<div class="td w20">0.00</div>
+															</div>
+															<br>
+														</div>
+
+
+
+														<h1>Структурное выполнение (В.Президент)</h1>
+														<div class="tbl tbl14">
+															<div class="tr th">
+																<div class="td w10">ID</div>
+																<div class="td w15">Статус</div>
+																<div class="td w20">Структурное выполнение</div>
+																<div class="td w20">Личное выполнение</div>
+																<div class="td w20">Требуемая</div>
+																<div class="td w20">Остаток к выполнению</div>
+
+															</div>
+														</div>
+
+
+
+														<div id="accordion">
+															<div class="tbl tbl14 tbl_head">
+
+																<div class="tr">
+																	<div class="td w10"><a href="#"
+																			title="Александр Иванов, example@mail.com">#457689</a></div>
+																	<div class="td w15">Руководитель</div>
+																	<div class="td w20">9 567.00</div>
+																	<div class="td w20">5 456.00</div>
+																	<div class="td w20">10 000.00</div>
+																	<div class="td w20">3 456.00</div>
+																</div>
+															</div>
+
+															<div>
+																<div class="tbl tbl14">
+																	<div class="tr th">
+																		<div class="td w10">ID</div>
+																		<div class="td w10">Статус</div>
+																		<div class="td w20">Выполнение структурой</div>
+																		<div class="td w20">Выполнено 1 линией</div>
+																		<div class="td w20">Требуемая</div>
+																		<div class="td w20">Остаток к выполнению</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w10"><a href="#"
+																				title="Александр Иванов, example@mail.com">#457689</a></div>
+																		<div class="td w10">Лидер</div>
+																		<div class="td w20">9 567.00</div>
+																		<div class="td w20">5 456.00</div>
+																		<div class="td w20">10 000.00</div>
+																		<div class="td w20">3 456.00</div>
+																	</div>
+
+																	<div class="tr red_bg">
+																		<div class="td w10"><a href="#">#457689</a></div>
+																		<div class="td w10">Лидер</div>
+																		<div class="td w20">1 567.00</div>
+																		<div class="td w20">456.00</div>
+																		<div class="td w20">10 000.00</div>
+																		<div class="td w20">9 456.00</div>
+																	</div>
+
+																	<div class="tr">
+																		<div class="td w10"><a href="#">#457689</a></div>
+																		<div class="td w10">Лидер</div>
+																		<div class="td w20">9 567.00</div>
+																		<div class="td w20">5 456.00</div>
+																		<div class="td w20">10 000.00</div>
+																		<div class="td w20">3 456.00</div>
+																	</div>
+
+																	<div class="tr green">
+																		<div class="td w10"><a href="#">#457689</a></div>
+																		<div class="td w10">Лидер</div>
+																		<div class="td w20">10 567.00</div>
+																		<div class="td w20">5 456.00</div>
+																		<div class="td w20">10 000.00</div>
+																		<div class="td w20">0.00</div>
+																	</div>
+
+																</div>
+															</div>
+
+															<div class="tbl tbl14 tbl_head">
+
+																<div class="tr">
+																	<div class="td w10"><a href="#"
+																			title="Александр Иванов, example@mail.com">#457689</a></div>
+																	<div class="td w15">Руководитель</div>
+																	<div class="td w20">9 567.00</div>
+																	<div class="td w20">5 456.00</div>
+																	<div class="td w20">10 000.00</div>
+																	<div class="td w20">3 456.00</div>
+																</div>
+															</div>
+
+															<div>
+																<div class="tbl tbl14">
+																	<div class="tr th">
+																		<div class="td w10">ID</div>
+																		<div class="td w10">Статус</div>
+																		<div class="td w20">Выполнение структурой</div>
+																		<div class="td w20">Выполнено 1 линией</div>
+																		<div class="td w20">Требуемая</div>
+																		<div class="td w20">Остаток к выполнению</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w10"><a href="#"
+																				title="Александр Иванов, example@mail.com">#457689</a></div>
+																		<div class="td w10">Лидер</div>
+																		<div class="td w20">9 567.00</div>
+																		<div class="td w20">5 456.00</div>
+																		<div class="td w20">10 000.00</div>
+																		<div class="td w20">3 456.00</div>
+																	</div>
+
+																	<div class="tr red_bg">
+																		<div class="td w10"><a href="#">#457689</a></div>
+																		<div class="td w10">Лидер</div>
+																		<div class="td w20">1 567.00</div>
+																		<div class="td w20">456.00</div>
+																		<div class="td w20">10 000.00</div>
+																		<div class="td w20">9 456.00</div>
+																	</div>
+
+																	<div class="tr">
+																		<div class="td w10"><a href="#">#457689</a></div>
+																		<div class="td w10">Лидер</div>
+																		<div class="td w20">9 567.00</div>
+																		<div class="td w20">5 456.00</div>
+																		<div class="td w20">10 000.00</div>
+																		<div class="td w20">3 456.00</div>
+																	</div>
+
+																	<div class="tr green">
+																		<div class="td w10"><a href="#">#457689</a></div>
+																		<div class="td w10">Лидер</div>
+																		<div class="td w20">10 567.00</div>
+																		<div class="td w20">5 456.00</div>
+																		<div class="td w20">10 000.00</div>
+																		<div class="td w20">0.00</div>
+																	</div>
+
+																</div>
+															</div>
+
+															<div class="tbl tbl14 tbl_head">
+
+																<div class="tr">
+																	<div class="td w10"><a href="#"
+																			title="Александр Иванов, example@mail.com">#457689</a></div>
+																	<div class="td w15">Руководитель</div>
+																	<div class="td w20">9 567.00</div>
+																	<div class="td w20">5 456.00</div>
+																	<div class="td w20">10 000.00</div>
+																	<div class="td w20">3 456.00</div>
+																</div>
+															</div>
+
+															<div>
+																<div class="tbl tbl14">
+																	<div class="tr th">
+																		<div class="td w10">ID</div>
+																		<div class="td w10">Статус</div>
+																		<div class="td w20">Выполнение структурой</div>
+																		<div class="td w20">Выполнено 1 линией</div>
+																		<div class="td w20">Требуемая</div>
+																		<div class="td w20">Остаток к выполнению</div>
+																	</div>
+																	<div class="tr">
+																		<div class="td w10"><a href="#"
+																				title="Александр Иванов, example@mail.com">#457689</a></div>
+																		<div class="td w10">Лидер</div>
+																		<div class="td w20">9 567.00</div>
+																		<div class="td w20">5 456.00</div>
+																		<div class="td w20">10 000.00</div>
+																		<div class="td w20">3 456.00</div>
+																	</div>
+
+																	<div class="tr red_bg">
+																		<div class="td w10"><a href="#">#457689</a></div>
+																		<div class="td w10">Лидер</div>
+																		<div class="td w20">1 567.00</div>
+																		<div class="td w20">456.00</div>
+																		<div class="td w20">10 000.00</div>
+																		<div class="td w20">9 456.00</div>
+																	</div>
+
+																	<div class="tr">
+																		<div class="td w10"><a href="#">#457689</a></div>
+																		<div class="td w10">Лидер</div>
+																		<div class="td w20">9 567.00</div>
+																		<div class="td w20">5 456.00</div>
+																		<div class="td w20">10 000.00</div>
+																		<div class="td w20">3 456.00</div>
+																	</div>
+
+																	<div class="tr green">
+																		<div class="td w10"><a href="#">#457689</a></div>
+																		<div class="td w10">Лидер</div>
+																		<div class="td w20">10 567.00</div>
+																		<div class="td w20">5 456.00</div>
+																		<div class="td w20">10 000.00</div>
+																		<div class="td w20">0.00</div>
+																	</div>
+
+																</div>
+															</div>
+
+														</div>
+
+
+
+
+													</div>
+
+												</div>
+
+
+
+
+
+
+
+											</div>
+
+										</div>
+
+
+									</div>
+
+
+								</div>
+
+
+
+							</div>
+
+						</div>
+
+
+
+
+						<div class="tabs__content animated">
+
+							<div class="f jsp fww w100">
+
+
+
+								<div class="f jsp fww white w49 scroll" style="margin-top: 0;">
+									<h2>Отзывы</h2>
+
+									<div class="otziv">
+										<div class="av"><img src="images/IPIImsI1uJ8.jpg" /></div>
+
+										<div class="o_text">
+											<h3 class="o_nm">Александр Александров</h3>
+											<p>
+												Также достаточно часто горящие туры актуальны именно в непопулярное туристическое
+												время и поэтому цены падают в несколько раз. Если вы любите путешествовать или
+												отдыхать на заграничных курортах, то вы сможете отслеживать появление таких горящих
+												туров, если воспользуетесь сайтом туристического оператора NTK Intourist.
+
+
+
+											</p>
+
+										</div>
+
+									</div>
+
+									<div class="otziv">
+										<div class="av"><img src="images/IPIImsI1uJ8.jpg" /></div>
+
+										<div class="o_text">
+											<h3 class="o_nm">Александр Александров</h3>
+											<p>
+												Также достаточно часто горящие туры актуальны именно в непопулярное туристическое
+												время и поэтому цены падают в несколько раз. Если вы любите путешествовать или
+												отдыхать на заграничных курортах, то вы сможете отслеживать появление таких горящих
+												туров, если воспользуетесь сайтом туристического оператора NTK Intourist.
+
+												Разнообразие вариантов для выбора, которые представлены на нашем портале, дают
+												возможность подобрать для себя именно ту поездку, которая не только даст вам
+												возможность сэкономить, но и принесет моральное и эстетическое наслаждение. Так что
+												обращайтесь!
+
+
+
+											</p>
+											<a href="#"><img src="images/screen.jpg" /></a>
+										</div>
+
+									</div>
+
+									<div class="otziv">
+										<div class="av"><img src="images/IPIImsI1uJ8.jpg" /></div>
+
+										<div class="o_text">
+											<h3 class="o_nm">Александр Александров</h3>
+											<p>
+												Также достаточно часто горящие туры актуальны именно в непопулярное туристическое
+												время и поэтому цены падают в несколько раз.
+
+
+											</p>
+											<a href="#"><img src="images/screen.jpg" /></a>
+										</div>
+
+									</div>
+
+								</div>
+
+
+
+								<div class="w49">
+
+									<h2>Видео отзывы</h2>
+
+									<div class="owl-carousel2 owl-theme" data-paroller-factor="-0.1"
+										data-paroller-type="foreground" data-paroller-direction="horizontal">
+
+										<div>
+
+											<iframe width="100%" height="257" src="https://www.youtube.com/embed/0TxbVRK4O_o"
+												frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+										</div>
+
+										<div>
+
+											<iframe width="100%" height="257" src="https://www.youtube.com/embed/0TxbVRK4O_o"
+												frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+										</div>
+
+										<div>
+
+											<iframe width="100%" height="257" src="https://www.youtube.com/embed/0TxbVRK4O_o"
+												frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+										</div>
+
+									</div>
+
+									<div class="w100 white">
+										<h2>Отправить отзыв</h2>
+
+										<form method="post">
+											<div class="form-group">
+												<label for="name">Текст</label>
+												<textarea class="form-control styler" name="mess" id="text_mess"
+													placeholder="Текст отзыва"></textarea>
+											</div>
+											<div class="form-group">
+												<label class="l-in" for="hf-password">Приложите изображение</label>
+
+												<input id="avatar" name="avatar" class="form-control" type="file">
+
+
+											</div>
+
+											<div class="form-group">
+												<label for="name">Ссылка на видеообзор</label>
+												<input class="form-control styler" name="url_video" id="url_video"
+													placeholder="Ссылка с сайта youtube">
+											</div>
+
+
+
+											<div class="card-footer">
+												<button type="submit" class="btn btn-sm btn-trust-or">
+													<i class="fa fa-dot-circle-o"></i> Отправить</button>
+
+											</div>
+										</form>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="tabs__content animated">
+							<div class="f jsp fww w100">
+								<h1>История начислений</h1>
+
+								<div class="white w100">
+									<div class="w100">
+
+										<div class="tbl tbl14 tleft tbl_sob">
+											<div class="tr th">
+												<div class="td w40">дата начисления </div>
+												<div class="td w30">номер депозита</div>
+												<div class="td w30">сумма депозита</div>
+												<div class="td w20">валюта</div>
+												<div class="td w30">ставка по депозиту</div>
+												<div class="td w40">начислено – сумма</div>
+												<div class="td w40">всего суммарно выплачено</div>
+												<div class="td w40">срок работы депозита</div>
+												<div class="td w40">Произведено начислений</div>
+												<div class="td w40">осталось начислений</div>
+											</div>
+											<div class="tr tacc">
+												<div class="td w40">20.08.2018 12:27</div>
+												<div class="td w30">Депозит "12456"</div>
+												<div class="td w30">535.25 USD</div>
+												<div class="td w20 green">$</div>
+												<div class="td w30">3%</div>
+												<div class="td w40">50 USD</div>
+												<div class="td w40">53 USD</div>
+												<div class="td w40">3 месяца</div>
+												<div class="td w40">1</div>
+												<div class="td w40">3</div>
+											</div>
+											<div class="tr red">
+												<div class="td w40">20.08.2018 12:27</div>
+												<div class="td w30">Депозит "12456"</div>
+												<div class="td w30">535.25 USD</div>
+												<div class="td w20 green">$</div>
+												<div class="td w30">3%</div>
+												<div class="td w40">-50 USD</div>
+												<div class="td w40">53 USD</div>
+												<div class="td w40">3 месяца</div>
+												<div class="td w40">1</div>
+												<div class="td w40">3</div>
+											</div>
+											<div class="tr green">
+												<div class="td w40">20.08.2018 12:27</div>
+												<div class="td w30">Депозит "12456"</div>
+												<div class="td w30">535.25 USD</div>
+												<div class="td w20 green">$</div>
+												<div class="td w30">3%</div>
+												<div class="td w40">50 USD</div>
+												<div class="td w40">53 USD</div>
+												<div class="td w40">3 месяца</div>
+												<div class="td w40">1</div>
+												<div class="td w40">3</div>
+											</div>
+
+
+
+
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="tabs__content animated">
+
+							<div class="f jsp fww w100">
+								<h1>Статистика событий</h1>
+
+								<div class="white w100">
+									<div class="w100">
+
+										<div class="tbl tbl14 tleft tbl_sob">
+											<div class="tr th">
+												<div class="td w15">Дата</div>
+												<div class="td w30">Событие</div>
+												<div class="td w40">Описание</div>
+												<div class="td w15">Сумма</div>
+											</div>
+											<div class="tr green">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Начисление по депозиту</div>
+												<div class="td w40">Депозит "12456"</div>
+												<div class="td w15 green">+ 535.25 USD</div>
+											</div>
+											<div class="tr green">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Реферальное начисление</div>
+												<div class="td w40"></div>
+												<div class="td w15 green">+ 123.54 USD</div>
+											</div>
+											<div class="tr grey">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Заявка по выполнению</div>
+												<div class="td w40">Выполнение по договору партнера</div>
+												<div class="td w15">На рассмотрении</div>
+											</div>
+											<div class="tr green">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Заявка по выполнению</div>
+												<div class="td w40">Выполнение по договору партнера</div>
+												<div class="td w15 green">Подтверждена</div>
+											</div>
+											<div class="tr red_bg">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Заявка не подана в срок</div>
+												<div class="td w40">У вас 2 дня для предоставления отчета.<br>Вы оштрафованы за не
+													выполнение условий договора на 10$</div>
+												<div class="td w15 red">-10 USD</div>
+											</div>
+											<div class="tr green">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Начисление ЗП</div>
+												<div class="td w40"></div>
+												<div class="td w15 green">+ 5000 USD</div>
+											</div>
+											<div class="tr yel_bg">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Не активные партнеры</div>
+												<div class="td w40">В вашей структуре есть не активные партнеры</div>
+												<div class="td w15 red"></div>
+											</div>
+											<div class="tr">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Регистрация нового партнера</div>
+												<div class="td w40">ID 456789<br> Александр Иванов</div>
+												<div class="td w15 green"></div>
+											</div>
+											<div class="tr">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Новый отзыв</div>
+												<div class="td w40">В вашей структуре новый отзыв<br>
+													<a href="#">Просмотреть</a>
+												</div>
+												<div class="td w15 green"></div>
+											</div>
+
+											<div class="tr">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Выплата партнеру</div>
+												<div class="td w40">ID 456789<br> Александр Иванов + 1234.56 USD</div>
+												<div class="td w15 green"></div>
+											</div>
+
+											<div class="tr red">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Вывод</div>
+												<div class="td w40">Вывод через PayPal</div>
+												<div class="td w15 red">- 123.54 USD</div>
+											</div>
+
+											<div class="tr green">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Пополнение</div>
+												<div class="td w40">Пополнение через PayPal</div>
+												<div class="td w15 green">+ 10 123.54 USD</div>
+											</div>
+
+											<div class="tr red">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Перевод</div>
+												<div class="td w40">Перевод пользователю Александр Иванов (ID 456789)</div>
+												<div class="td w15 red">- 123.54 USD</div>
+											</div>
+
+											<div class="tr green">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Выполнение структуры</div>
+												<div class="td w40">Ваша структура выполнила план в 10000 USD</div>
+												<div class="td w15 red"></div>
+											</div>
+
+											<div class="tr red_bg">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Не выполнение структурой</div>
+												<div class="td w40">Ваша структура не выполнила план в 10000 USD</div>
+												<div class="td w15 red"></div>
+											</div>
+
+											<div class="tr yel_bg">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Выполнение структуры</div>
+												<div class="td w40">До выполнения плана структуре нужно - 5746 USD</div>
+												<div class="td w15 red"></div>
+											</div>
+
+											<div class="tr green">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Выполнение условий партнера</div>
+												<div class="td w40">Подписан договор</div>
+												<div class="td w15 red"></div>
+											</div>
+
+											<div class="tr green">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Выполнение условий партнера</div>
+												<div class="td w40">Активирован депозит</div>
+												<div class="td w15 red"></div>
+											</div>
+
+											<div class="tr green">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Выполнение условий партнера</div>
+												<div class="td w40">Пройдено обучение</div>
+												<div class="td w15 red"></div>
+											</div>
+
+											<div class="tr yel_bg">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Статус "Лидер"</div>
+												<div class="td w40">Вы можете перейти на следующий статус партнера<br>
+													<a href="#">Перейти</a>
+												</div>
+												<div class="td w15 red"></div>
+											</div>
+
+											<div class="tr red">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Покупка</div>
+												<div class="td w40">Футболка брендированная</div>
+												<div class="td w15 red">- 123.54 USD</div>
+											</div>
+
+											<div class="tr green">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Создан лендинг</div>
+												<div class="td w40">Вами создан лендинг пейдж<br>
+													<a href="#">Посмотреть</a>
+												</div>
+												<div class="td w15 red"></div>
+											</div>
+
+											<div class="tr yel_bg">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Договор</div>
+												<div class="td w40">Для верификации подпишите договор<br>
+													<a href="#">Перейти</a>
+												</div>
+												<div class="td w15 red"></div>
+											</div>
+
+											<div class="tr yel_bg">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Обучение</div>
+												<div class="td w40">Оплатите обучение<br>
+													<a href="#">Перейти</a>
+												</div>
+												<div class="td w15 red"></div>
+											</div>
+
+											<div class="tr yel_bg">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Подтверждение e-mail</div>
+												<div class="td w40">Подтвердите свой элекронный адрес<br>
+													<a href="#">Перейти</a>
+												</div>
+												<div class="td w15 red"></div>
+											</div>
+
+											<div class="tr yel_bg">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Паспорт</div>
+												<div class="td w40">Для верификации предоставьте паспорт<br>
+													<a href="#">Перейти</a>
+												</div>
+												<div class="td w15 red"></div>
+											</div>
+
+											<div class="tr red_bg">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Вывод отклонен</div>
+												<div class="td w40">Вывод не доступен по причине не оставленного отзыва по
+													предыдушему выводу о работе компании</div>
+												<div class="td w15 red"></div>
+											</div>
+
+											<div class="tr yel_bg">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Статус "Лидер"</div>
+												<div class="td w40">Для слудющего статуса необходимо - 5475 USD<br>
+													<a href="#">Перейти</a>
+												</div>
+												<div class="td w15 red"></div>
+											</div>
+
+
+											<div class="tr yel_bg">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Новый займ</div>
+												<div class="td w40">Подана завка на рассмотрение от ID 234234 на сумму 1000 USD, к
+													оплате 50 USD<br>
+													<a href="#">Одобрить</a>
+												</div>
+												<div class="td w15 red"></div>
+											</div>
+
+											<div class="tr red">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Вы одобрили займ</div>
+												<div class="td w40">Займ от ID 234234, на сумму 1000 USD</div>
+												<div class="td w15 red">- 50.00 USD</div>
+											</div>
+
+											<div class="tr">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Займ отклонен</div>
+												<div class="td w40">Вами отклонена заявка на займ от ID 234234, на сумму 1000 USD
+												</div>
+												<div class="td w15 red"></div>
+											</div>
+
+											<div class="tr">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Заявка на займ</div>
+												<div class="td w40">Вы запросили займ на 1000 USD</div>
+												<div class="td w15">На рассмотрении</div>
+											</div>
+
+											<div class="tr red_bg">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Займ не одобрен</div>
+												<div class="td w40">Ваша заявка на займ отклонена</div>
+												<div class="td w15"></div>
+											</div>
+
+											<div class="tr green">
+												<div class="td w15">20.08.2018 12:27</div>
+												<div class="td w30">Займ одобрен</div>
+												<div class="td w40">Ваша заявка на займ одобрена</div>
+												<div class="td w15">+ 1000 USD</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+
+
+					</div><!-- .tabs -->
+
+					<div class="foot">
+
+						<p>© 2018 Logo Service</p>
+
+					</div>
+
+				</main><!-- .content -->
+			</div><!-- .container-->
+
+			<aside class="left-sidebar">
+
+				<div class="blck op2 left-sidebar-item">
+
+					<div class="av"><img src="images/IPIImsI1uJ8.jpg" /></div>
+
+					<div class="inf">
+						<a href="#">Александр Иванов</a>
+						<p>Верифицирован</p>
+						<a href="#" class="part">Партнерский уровень:<span>2</span></a>
+						<a href="#" class="zvezdi"><i class="icn icon-star"></i><i class="icn icon-star"></i><i
+								class="icn icon-star"></i></a>
+					</div>
+
+				</div>
+
+				<div class="blck red_war left-sidebar-item">
+					<div class="zc f jsp w100">
+
+						<div class="w10"><i class="icn icon-exclamation"></i></div>
+						<div class="w83">
+							Вы не отправили отчет<br>
+							<a href="index.html#tab7">Отправить</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="blck op95 fww left-sidebar-item">
+					<div class="zc f fww">
+
+
+						<div class="w50">
+							<p class="val">USD</p>
+							<i class="lbl">Доступно к выводу</i>
+						</div>
+
+						<div class="w50 right">
+							<p class="sum">1 543</p>
+							<i class="lbl">+ 16</i>
+						</div>
+
+						<div class="w50">
+							<p class="val">EUR</p>
+							<i class="lbl">Доступно к выводу</i>
+						</div>
+
+						<div class="w50 right">
+							<p class="sum">1 543</p>
+							<i class="lbl">+ 16</i>
+						</div>
+
+						<div class="w50">
+							<p class="val">RUB</p>
+							<i class="lbl">Доступно к выводу</i>
+						</div>
+
+						<div class="w50 right">
+							<p class="sum">1 543</p>
+							<i class="lbl">+ 16</i>
+						</div>
+
+						<div class="w50">
+							<p class="val">UAH</p>
+							<i class="lbl">Доступно к выводу</i>
+						</div>
+
+						<div class="w50 right">
+							<p class="sum">1 543</p>
+							<i class="lbl">+ 16</i>
+						</div>
+
+						<div class="w50">
+							<p class="val">KZT</p>
+							<i class="lbl">Доступно к выводу</i>
+						</div>
+
+						<div class="w50 right">
+							<p class="sum">1 543</p>
+							<i class="lbl">+ 16</i>
+						</div>
+
+
+
+						<div class="w100 center">
+							<button class="btn">Пополнить</button>
+						</div>
+
+					</div>
+				</div>
+
+
+
+
+
+
+
+			</aside><!-- .left-sidebar -->
+
+		</div><!-- .middle-->
+
+
+	</div><!-- .wrapper -->
+
+	<div style="display: none;" id="animatedModal5" class="animated-modal otziv_modal">
+		<div class="tbl tbl14">
+
+			<div class="tr th">
+				<div class="td w20">Дата</div>
+				<div class="td w30">Отчет № / Период</div>
+				<div class="td w20">ID</div>
+				<div class="td w20">Статус</div>
+
+
+			</div>
+
+			<div class="tr">
+				<div class="td w20">20.08.2018</div>
+				<div class="td w30">Отчет №34123<br>(20.08.2018-26.08.2018)</div>
+				<div class="td w20">342342</div>
+				<div class="td w20 green">Подтвержден</div>
+			</div>
+
+			<div class="tr">
+				<div class="td w20">20.08.2018</div>
+				<div class="td w30">Отчет №34123<br>(20.08.2018-26.08.2018)</div>
+				<div class="td w20">342342</div>
+				<div class="td w20 green">Подтвержден</div>
+			</div>
+
+			<div class="tr">
+				<div class="td w20">20.08.2018</div>
+				<div class="td w30">Отчет №34123<br>(20.08.2018-26.08.2018)</div>
+				<div class="td w20">342342</div>
+				<div class="td w20 green">Подтвержден</div>
+			</div>
+
+			<div class="tr">
+				<div class="td w20">20.08.2018</div>
+				<div class="td w30">Отчет №34123<br>(20.08.2018-26.08.2018)</div>
+				<div class="td w20">342342</div>
+				<div class="td w20 green">Подтвержден</div>
+			</div>
+
+			<div class="tr">
+				<div class="td w20">20.08.2018</div>
+				<div class="td w30">Отчет №34123<br>(20.08.2018-26.08.2018)</div>
+				<div class="td w20">342342</div>
+				<div class="td w20 green">Подтвержден</div>
+			</div>
+
+			<div class="tr">
+				<div class="td w20">20.08.2018</div>
+				<div class="td w30">Отчет №34123<br>(20.08.2018-26.08.2018)</div>
+				<div class="td w20">342342</div>
+				<div class="td w20 green">Подтвержден</div>
+			</div>
+
+			<div class="tr">
+				<div class="td w20">20.08.2018</div>
+				<div class="td w30">Отчет №34123<br>(20.08.2018-26.08.2018)</div>
+				<div class="td w20">342342</div>
+				<div class="td w20 green">Подтвержден</div>
+			</div>
+
+			<div class="tr">
+				<div class="td w20">20.08.2018</div>
+				<div class="td w30">Отчет №34123<br>(20.08.2018-26.08.2018)</div>
+				<div class="td w20">342342</div>
+				<div class="td w20 green">Подтвержден</div>
+			</div>
+
+			<div class="tr">
+				<div class="td w20">20.08.2018</div>
+				<div class="td w30">Отчет №34123<br>(20.08.2018-26.08.2018)</div>
+				<div class="td w20">342342</div>
+				<div class="td w20 green">Подтвержден</div>
+			</div>
+
+			<div class="tr">
+				<div class="td w20">20.08.2018</div>
+				<div class="td w30">Отчет №34123<br>(20.08.2018-26.08.2018)</div>
+				<div class="td w20">342342</div>
+				<div class="td w20 green">Подтвержден</div>
+			</div>
+
+			<div class="tr">
+				<div class="td w20">20.08.2018</div>
+				<div class="td w30">Отчет №34123<br>(20.08.2018-26.08.2018)</div>
+				<div class="td w20">342342</div>
+				<div class="td w20 green">Подтвержден</div>
+			</div>
+
+			<div class="tr">
+				<div class="td w20">20.08.2018</div>
+				<div class="td w30">Отчет №34123<br>(20.08.2018-26.08.2018)</div>
+				<div class="td w20">342342</div>
+				<div class="td w20 green">Подтвержден</div>
+			</div>
+
+			<div class="tr">
+				<div class="td w20">20.08.2018</div>
+				<div class="td w30">Отчет №34123<br>(20.08.2018-26.08.2018)</div>
+				<div class="td w20">342342</div>
+				<div class="td w20 green">Подтвержден</div>
+			</div>
+
+			<div class="tr">
+				<div class="td w20">20.08.2018</div>
+				<div class="td w30">Отчет №34123<br>(20.08.2018-26.08.2018)</div>
+				<div class="td w20">342342</div>
+				<div class="td w20 green">Подтвержден</div>
+			</div>
+
+			<div class="tr">
+				<div class="td w20">20.08.2018</div>
+				<div class="td w30">Отчет №34123<br>(20.08.2018-26.08.2018)</div>
+				<div class="td w20">342342</div>
+				<div class="td w20 green">Подтвержден</div>
+			</div>
+
+			<div class="tr">
+				<div class="td w20">20.08.2018</div>
+				<div class="td w30">Отчет №34123<br>(20.08.2018-26.08.2018)</div>
+				<div class="td w20">342342</div>
+				<div class="td w20 green">Подтвержден</div>
+			</div>
+
+			<div class="tr">
+				<div class="td w20">20.08.2018</div>
+				<div class="td w30">Отчет №34123<br>(20.08.2018-26.08.2018)</div>
+				<div class="td w20">342342</div>
+				<div class="td w20 green">Подтвержден</div>
+			</div>
+
+			<div class="tr">
+				<div class="td w20">20.08.2018</div>
+				<div class="td w30">Отчет №34123<br>(20.08.2018-26.08.2018)</div>
+				<div class="td w20">342342</div>
+				<div class="td w20 green">Подтвержден</div>
+			</div>
+
+			<div class="tr">
+				<div class="td w20">20.08.2018</div>
+				<div class="td w30">Отчет №34123<br>(20.08.2018-26.08.2018)</div>
+				<div class="td w20">342342</div>
+				<div class="td w20 green">Подтвержден</div>
+			</div>
+
+			<div class="tr">
+				<div class="td w20">20.08.2018</div>
+				<div class="td w30">Отчет №34123<br>(20.08.2018-26.08.2018)</div>
+				<div class="td w20">342342</div>
+				<div class="td w20 green">Подтвержден</div>
+			</div>
+
+			<div class="tr">
+				<div class="td w20">20.08.2018</div>
+				<div class="td w30">Отчет №34123<br>(20.08.2018-26.08.2018)</div>
+				<div class="td w20">342342</div>
+				<div class="td w20 green">Подтвержден</div>
+			</div>
+
+			<div class="tr">
+				<div class="td w20">20.08.2018</div>
+				<div class="td w30">Отчет №34123<br>(20.08.2018-26.08.2018)</div>
+				<div class="td w20">342342</div>
+				<div class="td w20 green">Подтвержден</div>
+			</div>
+
+			<div class="tr">
+				<div class="td w20">20.08.2018</div>
+				<div class="td w30">Отчет №34123<br>(20.08.2018-26.08.2018)</div>
+				<div class="td w20">342342</div>
+				<div class="td w20 green">Подтвержден</div>
+			</div>
+
+
+
+
+
+
+
+
+		</div>
+
+
+	</div>
+	<script src="js\script.js"></script>
+</body>
+
+</html>

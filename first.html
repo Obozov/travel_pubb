@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/jquery.formstyler.css" rel="stylesheet">
+	<link href="css/jquery.formstyler.theme.css" rel="stylesheet">
+	<link href="css/simple-line-icons.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/owl.theme.default.css" rel="stylesheet">
+	<link href="css/jquery-ui.min.css" rel="stylesheet">
+	<link href="css/jquery.fancybox.css" rel="stylesheet">
+	<link href="css/datepicker.min.css" rel="stylesheet">
+	
+	<script src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="js/flexmenu.min.js"></script>
+	<script type="text/javascript" src="js/jquery.formstyler.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/jquery.knob.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="js/datepicker.min.js"></script>
+	
+	<script src="js/my.js"></script>
+</head>
+
+<body class="cars">
+
+<div class="wrapper">
+
+	<div class="header">
+
+		<div class="logo">
+			<a  href="first.html">Logo Service</a>
+		</div>
+
+
+		<div class="m_desc">
+			<ul id="menudesc">
+
+				<li class="first"><a href="index.html" >Личный кабинет</a></li> 
+				<li ><a href="add.html">Пополнение и Вывод</a></li> 
+				<li><a href="settings.html">Настройка профиля</a></li>
+				<li><a href="promo.html">Промоматериалы</a></li> 
+				<li><a href="support.html">Служба поддержки</a></li>
+				<li><a href="friends.html">Наши партнеры</a></li>
+
+
+			</ul>
+		</div>
+
+		<div class="sub_menu">
+
+			<div class="lang">
+				<select>
+					<option class="ptn s_01">Русский</option>
+					<option class="ptn s_02">English</option>
+					<option class="ptn s_03">Français</option>
+					<option class="ptn s_04">中國</option>
+					<option class="ptn s_05">العربية</option>
+					<option class="ptn s_06">Deutsch</option>
+					<option class="ptn s_07">Español</option>
+
+				</select>
+
+			</div>
+
+			<a href="#">Выход</a>
+
+		</div>
+
+	</div><!-- .header-->
+
+	<div class="middle">
+
+	
+			<main class="content q">
+				
+				<div class="calc">
+					<div class="calc_top">
+					<p class="title">Первый депозит</p>
+					
+					<div class="calc_sl">
+							<p>Сумма вклада</p>
+							<label for="Aamount-input"></label>
+					<input type="number" id="Aamount-input" placeholder="Введите сумму">
+								
+						
+
+						 <div class="dropdown-money pos">
+							<button class="dropbtn-money" id="period-btn2">USD</button>
+							<div class="dropdown-content-money poss">
+								<a href="#" onclick="setPeriod('RUB')">RUB</a>
+								<a href="#" onclick="setPeriod('EUR')">EUR</a>
+								<a href="#" onclick="setPeriod('UAH')">UAH</a>
+								<a href="#" onclick="setPeriod('USD')">USD</a>
+							</div>
+						</div></span>
+					</div>
+				
+					<div class="slider-wrapper">
+						<p>Период:</p>
+						<input type="range" min="1" max="4" value="1" class="slider" id="Aperiod-slider">
+						<div class="slider-labels">
+						  <span class="slider-label">30 дней</span>
+						  <span class="slider-label">90 дней</span>
+						  <span class="slider-label">180 дней</span>
+						  <span class="slider-label">365 дней</span>
+						</div>
+					 </div>
+					 <div class="dn">
+					 <label for="Aperiod-select">Период:</label>
+					 <select id="Aperiod-select">
+						<option value="30">30 дней</option>
+						<option value="90">90 дней</option>
+						<option value="180">180 дней</option>
+						<option value="365">365 дней</option>
+					 </select>
+					</div>
+										
+
+						
+
+					</div>
+
+					
+
+				
+					
+					
+					 <button id="Acalculate-btn" class="btn btng g">Рассчитать</button>	
+					 
+
+					
+					<div class="calc_bottom">
+						<div id="result">
+							<p>Сумма всего с телом суммы: <span id="Atotal-amount"></span></p>
+							<p>Прибыль за весь период составит: <span id="Atotal-profit"></span></p>
+							<p>Прибыль в месяц составит: <span id="Amonthly-profit"></span></p>
+					  </div>
+
+						
+					
+					 </div>
+					
+					
+					
+					
+					</div>
+					<div class="containerr">
+					<div class="taps_content__oki  raz2">
+						
+						<div class="itemm">
+							<h2>Мы на рынке с 2010 года</h2>
+							<p>Уже 23 года мы честно выполняем свои обязательства перед нашими кредиторами
+							</p>
+						</div>
+						<div class="itemm">
+							<h2>700+ млрд рублей</h2>
+							<p>Всего получено инвестиций </p>
+						</div>
+						<div class="itemm">
+							<h2>50+ тыс </h2>
+							<p>Всего инвесторов </p>
+						</div>
+						<div class="itemm">
+							<h2>150+ млрд</h2>
+							<p>Выплачено инвестиционных начислений</p>
+						</div>
+					</div>
+					
+					<div class="how">
+						<h1 class="titlee">Как это работает?</h1>
+						<div id="text-container">
+							<h1 id="animated-text">Мы работаем с населением, и выдаем краткосрочные заем, инвестор инвестирует в нас, мы выдаем заем, получаем заем обратно с процентом вознаграждения, возвращаем средства инвестору и прибытью, разницу оставляем себе.</h1>
+						 </div>
+						 
+					</div>
+					<div class="pod">
+						<h1>Под какой процент  мы берем деньги и под какой процент выдаем их населению?</h1>
+						<p>Инвестиции мы принимаем под (от 8 до 15%) в месяц, в зависимости от периода инвестирования средств. Микро займы мы выдаем от 0,1 сутки, что составляет 20% за 20 дней, и до 30% в месяц, в зависимости от страны, региона и выдающей микро заем платформы.</p>
+						<h1 class="h11">Мы работаем в странах Россия, Казахстан, Беларусь, Украина.</h1>
+						<h1 class="qwe" >В какой валюте я могу инвестировать?</h1>
+						<div class="iconss">
+							<div class="iconss-top">
+								
+								<p>Доллар<span><img src="images/rub.png" width="15" alt=""></span></p>
+								<p>Евро<span><img src="images/euro.png" width="15" alt=""></span></p>
+								<p>Рубли<span><img src="images/currency.png" width="15" alt=""></span></p>
+								<p>Тенге<span><img src="images/tenge.png" width="15" alt=""></span></p>
+								<p>Гривна<span><img src="images/hryvnia.png" width="15" alt=""></span></p>
+								
+							</div>
+							
+							<div class="pod-bottom">
+								
+							 <div class="iconss-mid">
+								<h1 class="pod-h3">Так-же криптовалютах</h1>
+								<p>BitCoin<span><img src="images/bitcoin.png" width="50" alt=""></span></p>
+								<p>Tether<span><img src="images/tether.png" width="50"  alt=""></span></p>
+								<p>LiteCoin<span><img src="images/litecoin.png" width="50" alt=""></span></p>
+								<p>Etherium<span><img src="images/ethereum.png" width="50" alt=""></span></p>
+							 </div>
+							 <h1 class="pod-h3">Из любых платежных средств</h1>
+							 <div class="iconss-bot">
+								
+								<img src="images/qiwi-crypto-cryptocurrency-cryptocurrencies-cash-money-bank-payment_95417.png" alt="">
+								<img src="images/iomoney.png" width="100" alt="">
+								<img src="images/payeer-logo.png" width="60" alt="">
+								<img src="images/Advcash.png" width="100" alt="">
+								
+								</div>
+							 </div>
+						</div>
+					</div>
+					<div class="how-to-inve">
+						<h1>Как начать инвестировать?</h1>
+						<div class="inve-block">
+							<div class="block-item">
+								<img src="images/free-icon-registration-form-1792392.png" alt="">
+								<h1>Пройдите регистрацию</h1>
+							</div>
+							<div class="block-item">
+								<img src="images/free-icon-form-1792371.png" width="130" alt="">
+								<h1>Заполните простейшую анкету</h1>
+								<p>Нужен тут какой-то текст?Нужен тут какой-то текст?Нужен тут какой-то текст?</p>
+							</div>
+							<div class="block-item">
+								<img src="images/free-icon-tax-6333237.png" width="130" alt="">
+								<h1>Пополните баланс</h1>
+							</div>
+							<div class="block-item">
+								<img src="images/free-icon-commission-1792402.png"width="130" alt="">
+								<h1>Выберите тариф и откройте депозит</h1>
+							</div>
+						</div>
+					</div>
+					<div class="reviews">
+						<h1 class="reviews-title">Отзывы</h1>
+						<div class="reviews-block">
+							
+							<div class="reviews-item">
+								<img src="images/ava1.jpg"width="40" height="40" alt="">
+								<h1>Denis Lehovich</h1>
+								<p>Зарегестрировался и через 2 недели +30%</p>
+							</div>
+							<div class="reviews-item">
+								<img src="images/ava2.jpg"width="40" height="40" alt="">
+								<h1>Laura Prihodko</h1>
+								<p>Всем рекомендую, накопила на отпуск за пару месяцов АБСОЛЮТНО пасивно</p>
+							
+							</div>
+							<div class="reviews-item">
+								<img src="images/ava3.jpg"width="40" height="40" alt="">
+								<h1>Vikroria Ovelova</h1>
+								<p>Занимаюсь инвестициями уже пару лет, ваша компания одна из лучший, все быстро и комфортно</p>
+							
+							</div>
+							<div class="reviews-item">
+								<img src="images/ava4.jpg"width="40" height="40" alt="">
+								<h1>Svetlana Nakipova</h1>
+								<p>Заработала 10 000$ ничего не делая!</p>
+							
+							</div>
+						
+						</div>
+					</div>
+
+
+				
+				
+				</div>
+			
+				<footer class="footer ">
+					<div class="footer-left">
+						<p class="phon">+7 777 77 77 777</p>
+						<p class="phone">+7 777 77 77 777</p>
+						<p> info@gmail.com</p>
+						<p>8:00-20:00</p>
+						<p>instagram</p>
+					</div>
+					<div class="footer-right">
+						<img src="images/1i.png" width="200" alt="">
+						<img src="images/2i.png" width="200" alt="">
+					</div>
+				</footer>
+			</main>
+		</div>
+		</main>
+
+		<aside class="left-sidebar">
+			
+			<div class="blck op2">
+				
+				<div class="av"><img src="images/IPIImsI1uJ8.jpg"/></div>
+				
+				<div class="inf">
+					<a href="#">Александр Иванов</a>
+					<p>Верифицирован</p>
+					<a href="#" class="part">Партнерский уровень:<span>2</span></a>
+				</div>
+				
+			</div>
+			
+			<div class="blck op95 fww">
+				<div class="zc f fww">	
+					
+
+					<div class="w50">
+						<p class="val">USD</p>
+						<i class="lbl">Доступно к выводу</i>
+					</div>
+
+					<div class="w50 right">
+						<p class="sum">1 543</p>
+						<i class="lbl">+ 16</i>
+					</div>
+
+					<div class="w50">
+						<p class="val">EUR</p>
+						<i class="lbl">Доступно к выводу</i>
+					</div>
+
+					<div class="w50 right">
+						<p class="sum">1 543</p>
+						<i class="lbl">+ 16</i>
+					</div>
+
+					<div class="w50">
+						<p class="val">RUB</p>
+						<i class="lbl">Доступно к выводу</i>
+					</div>
+
+					<div class="w50 right">
+						<p class="sum">1 543</p>
+						<i class="lbl">+ 16</i>
+					</div>
+
+					<div class="w50">
+						<p class="val">UAH</p>
+						<i class="lbl">Доступно к выводу</i>
+					</div>
+
+					<div class="w50 right">
+						<p class="sum">1 543</p>
+						<i class="lbl">+ 16</i>
+					</div>
+
+					<div class="w50">
+						<p class="val">KZT</p>
+						<i class="lbl">Доступно к выводу</i>
+					</div>
+
+					<div class="w50 right">
+						<p class="sum">1 543</p>
+						<i class="lbl">+ 16</i>
+					</div>
+					
+					
+					<div class="w100 center">
+						<button class="btn">Пополнить</button>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			
+			
+			
+			
+			
+		</aside><!-- .left-sidebar -->
+
+
+	</div>
+
+	<script src="js/scriptFirst.js"></script>
+</body>
+</html>
